@@ -1,0 +1,1 @@
+Only if you can find the right lever will you be able to go into the castle!
