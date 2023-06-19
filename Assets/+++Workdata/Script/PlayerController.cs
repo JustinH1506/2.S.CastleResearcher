@@ -6,6 +6,7 @@ using Cinemachine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class PlayerController : MonoBehaviour
     public GameObject interact_button_text_castle_room;
 
     public GameObject book;
+
+    public GameObject next_Scene_Door;
+
+    public GameObject inventar_Book;
 
     public GameObject bookshelf_cutscene;
 
@@ -155,6 +160,11 @@ public class PlayerController : MonoBehaviour
         {
             book_count = 2;
         }
+
+        if (collision.CompareTag("Door_1"))
+        {
+            interact_count = 5;
+        }
     }
 
     /// <summary>
@@ -238,11 +248,29 @@ public class PlayerController : MonoBehaviour
         if(context.performed && book_count == 1)
         {
             book.SetActive(false);
+            inventar_Book.SetActive(true);
+
         }
         else if(context.performed && book_count == 2)
         {
             bookshelf_cutscene.SetActive(true);
+            inventar_Book.SetActive(false) ;
         }
+    }
+
+    public void Door_Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed && interact_count == 5)
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
+    #endregion
+
+    #region
+    public void Door()
+    {
+        next_Scene_Door.GetComponent<BoxCollider2D>().enabled = true;
     }
     #endregion
 }

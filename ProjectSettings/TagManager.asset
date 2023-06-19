@@ -16,6 +16,7 @@ TagManager:
   - Camera_Switch_Library
   - Camera_Switch_before_room
   - Camera_Switch_back_to_Pillar
+  - Door_1
   layers:
   - Default
   - TransparentFX
