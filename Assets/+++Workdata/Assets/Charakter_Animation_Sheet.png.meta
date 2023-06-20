@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 967274190c5c30e4981990d9c8a07071
+guid: 3a334d171d1994e44949a87e32d35773
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +77,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -90,7 +89,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -103,50 +101,70 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heblx-Sheet (1)_0
+      name: Charakter_Animation_Sheet_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 30
-        width: 50
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6111111}
+        x: 28
+        y: 29
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8faa8534f48974fb9aad98269e865f
-      internalID: -1662188364
+      spriteID: 4aa8f077d7916224882abe7db6e7c220
+      internalID: -891951982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heblx-Sheet (1)_1
+      name: Charakter_Animation_Sheet_1
       rect:
         serializedVersion: 2
-        x: 330
-        y: 30
-        width: 50
-        height: 90
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3888889}
+        x: 54
+        y: 29
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0557a6966460412409c8ab49a47e858f
-      internalID: 814264380
+      spriteID: 7bfc0bc8af532d94cbc20223df891fa7
+      internalID: -468198864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter_Animation_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 29
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162255916a2423f49811de58d63dbfa5
+      internalID: 2037731043
       vertices: []
       indices: 
       edges: []
@@ -162,8 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Heblx-Sheet (1)_0: -1662188364
-      Heblx-Sheet (1)_1: 814264380
+      Charakter_Animation_Sheet_0: -891951982
+      Charakter_Animation_Sheet_1: -468198864
+      Charakter_Animation_Sheet_2: 2037731043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

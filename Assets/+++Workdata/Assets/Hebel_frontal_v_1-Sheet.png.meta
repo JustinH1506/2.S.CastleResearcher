@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c9a57201dc18cf45b10bff606e4b217
+guid: 3ef71da0d5f8d9a448ca858e6285ce61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,22 +107,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Castle_Researcher_Sprite_big_tie_dye_0
+      name: Hebel_frontal_v_1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 90
-        width: 210
-        height: 550
-      alignment: 9
-      pivot: {x: 0.49523813, y: 0}
+        x: 40
+        y: 20
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50b06fb7ef94d4d45815e58836e833ca
-      internalID: 1716124381
+      spriteID: 5ff892fa8d8aa384ca0d7363529f2083
+      internalID: -1754564544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hebel_frontal_v_1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 20
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fcec948c0faa548928ad34cae9ae7f
+      internalID: -48754117
       vertices: []
       indices: 
       edges: []
@@ -138,7 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Castle_Researcher_Sprite_big_tie_dye_0: 1716124381
+      Hebel_frontal_v_1-Sheet_0: -1754564544
+      Hebel_frontal_v_1-Sheet_1: -48754117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,22 +4,38 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using Ink.Runtime;
-using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
-    #region Variables
+    #region Components
+
+    public Transform groundPoint;
+
     public Rigidbody2D rb;
 
     public SpriteRenderer sr;
 
+    public Animator anim;
+
+    public LayerMask WhatIsGround;
+
+    #endregion
+
+    #region Variables
     public int lever_count = 0;
 
     public int interact_count = 0;
 
     public int book_count = 0;
+
+    public float moveSpeed, jumpForce;
+
+    private float inputX;
+
+    public bool isWalking;
+
+    private bool isGrounded;
+    #endregion
 
     #region GameObjetcs
 
@@ -37,47 +53,32 @@ public class PlayerController : MonoBehaviour
 
     public GameObject bookshelf_cutscene;
 
+    public GameObject full_Bookshelf;
+
+    #endregion 
+
+    #region Serialized field
     [SerializeField] CinemachineVirtualCamera vcam01;
 
     [SerializeField] CinemachineVirtualCamera vcam02;
-
-
-    #endregion
-
-    public Transform groundPoint;
-
-    public LayerMask WhatIsGround;
-
-    public float moveSpeed, jumpForce;
-
-    private float inputX;
-
-    private bool isGrounded;
     #endregion
 
     #region Updates
-
     private void Start()
     {
      
     }
 
-    /// <summary>
-    /// In this Update mehtod the Player gets a square which checks if it is on the ground or not. Looks if the lever count equals to 
-    /// 4 and if it is deactivates it in the Hierarchy
-    /// </summary>
     void Update()
     {
         if (lever_count == 4)
         {
             first_door.SetActive(false);
         }
+
+        anim.SetBool("isWalking", isWalking);
     }
 
-    /// <summary>
-    /// In this FixedUpdate mehtod the Player gets a square which checks if it is on the ground or not. Tells the rigidbody´s velocity
-    /// to calculate the value inputX + the move speed to get movement for the Player
-    /// </summary>
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundPoint.position, .2f, WhatIsGround);
@@ -92,17 +93,19 @@ public class PlayerController : MonoBehaviour
         {
             sr.flipX = false;
         }
+
+        if(rb.velocity.x != 0)
+        {
+            isWalking = true;
+        }
+        else if(rb.velocity.x == 0)
+        {
+            isWalking = false;
+        }
     }
     #endregion
 
-    #region Ontrigger_OnCollision
-    /// <summary>
-    /// Looks for the Player entering the Triggerzone of Gameobjects with certian Tags. The Bridge_Breaker Tag makes the bridge
-    /// dissapear, Scene_Switch loads the scene with the index 1, and Camera_Switch gives the second camera a higher priority. Lever_1
-    /// to Lever_4 activate the Text to press Q above the Player and makes teh interact_counter higher for the interact button. 
-    /// </summary>
-    /// <param name="collision"></param>
-
+    #region OntriggerEnter&OnTriggerExit
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Scene_Switch"))
@@ -165,12 +168,11 @@ public class PlayerController : MonoBehaviour
         {
             interact_count = 5;
         }
+        else if (collision.CompareTag("Door_2"))
+        {
+            interact_count = 6;
+        }
     }
-
-    /// <summary>
-    /// when leaving the Triggerzones from Lever_1 to Lever_4 the Text gets deactivated and the interact_count gets set to 0.
-    /// </summary>
-    /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Lever_1"))
@@ -251,10 +253,10 @@ public class PlayerController : MonoBehaviour
             inventar_Book.SetActive(true);
 
         }
-        else if(context.performed && book_count == 2)
+
+         if(context.performed && book_count == 2)
         {
-            bookshelf_cutscene.SetActive(true);
-            inventar_Book.SetActive(false) ;
+            StartCoroutine("Wait");
         }
     }
 
@@ -264,12 +266,22 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(3);
         }
+        else if (context.performed && interact_count == 6)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
     #endregion
 
-    #region
-    public void Door()
+    #region IEnumerator
+    public IEnumerator Wait()
     {
+        bookshelf_cutscene.SetActive(true);
+        inventar_Book.SetActive(false);
+        full_Bookshelf.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
         next_Scene_Door.GetComponent<BoxCollider2D>().enabled = true;
     }
     #endregion

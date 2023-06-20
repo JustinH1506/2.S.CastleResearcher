@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c9a57201dc18cf45b10bff606e4b217
+guid: 1374c3804190c1a4c82f4623967488c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,22 +107,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Castle_Researcher_Sprite_big_tie_dye_0
+      name: Player_Idle_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 90
-        width: 210
-        height: 550
-      alignment: 9
-      pivot: {x: 0.49523813, y: 0}
+        x: 111
+        y: 30
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50b06fb7ef94d4d45815e58836e833ca
-      internalID: 1716124381
+      spriteID: 0dfc0d30ff69c5f4fa1c6d517b011a28
+      internalID: -1161460821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Idle_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 30
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc621a2ceb9c96459da5c95db3abca1
+      internalID: -836372311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Idle_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 30
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e3c32f35ba4d849a359bb1c23d9afb
+      internalID: 180474927
       vertices: []
       indices: 
       edges: []
@@ -138,7 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Castle_Researcher_Sprite_big_tie_dye_0: 1716124381
+      Player_Idle_SpriteSheet_0: -1161460821
+      Player_Idle_SpriteSheet_1: -836372311
+      Player_Idle_SpriteSheet_2: 180474927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
