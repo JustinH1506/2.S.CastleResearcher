@@ -2215,13 +2215,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494259418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.77, y: -2.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 60.68459, y: 2.6185794, z: -0.33738604}
   m_LocalScale: {x: 7.2968, y: 7.2968, z: 7.2968}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1477467530}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &517995227
 GameObject:
@@ -2580,6 +2580,15 @@ MonoBehaviour:
   inventar_Book: {fileID: 56399888}
   bookshelf_cutscene: {fileID: 1412709066}
   empty_Bookshelf: {fileID: 1847938758}
+  protein_Statue: {fileID: 0}
+  handcuff_Statue: {fileID: 0}
+  ribbon_Statue: {fileID: 0}
+  protein_Statue_Fake_1: {fileID: 0}
+  handcuff_Statue_Fake_1: {fileID: 0}
+  ribbon_Statue_Fake1: {fileID: 0}
+  protein_Statue_Fake_2: {fileID: 0}
+  handcuff_Statue_Fake_2: {fileID: 0}
+  ribbon_Statue_Fake_2: {fileID: 0}
   vcam01: {fileID: 1015435042}
   vcam02: {fileID: 1970245344}
 --- !u!212 &530998869
@@ -7263,6 +7272,8 @@ Transform:
   - {fileID: 1229586987}
   - {fileID: 1573165201}
   - {fileID: 384809026}
+  - {fileID: 1485813593}
+  - {fileID: 494259420}
   m_Father: {fileID: 1248964345}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7343,12 +7354,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485813591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 72.793, y: 1.7600002, z: 0}
+  m_LocalPosition: {x: 75.70759, y: 7.2785797, z: -0.33738604}
   m_LocalScale: {x: 8.0287, y: 7.7462497, z: 8.0287}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1477467530}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500588687
 GameObject:
@@ -10553,7 +10564,7 @@ SpriteRenderer:
   m_Size: {x: 3.74, y: 10.942672}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2061861771
