@@ -18,6 +18,12 @@ TagManager:
   - Camera_Switch_back_to_Pillar
   - Door_1
   - Door_2
+  - Proteinpowder
+  - Proteinpowder_Statue
+  - Handcuff_Statue
+  - Ribbon_Statue
+  - Ribbon
+  - Handcuffs
   layers:
   - Default
   - TransparentFX

@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     public int book_count = 0;
 
+    public int inventar_count;
+
     public float moveSpeed, jumpForce;
 
     private float inputX;
@@ -53,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject bookshelf_cutscene;
 
-    public GameObject full_Bookshelf;
+    public GameObject empty_Bookshelf;
 
     #endregion 
 
@@ -113,7 +115,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        if (collision.gameObject.CompareTag("CameraSwitch"))
+        if (collision.CompareTag("CameraSwitch"))
         {
             vcam01.m_Priority = 16;
         }
@@ -121,40 +123,40 @@ public class PlayerController : MonoBehaviour
         {
             vcam02.m_Priority = 20;
         }
-        else if (collision.gameObject.CompareTag("Camera_Switch_back_to_Pillar"))
+        else if (collision.CompareTag("Camera_Switch_back_to_Pillar"))
         {
             vcam02.m_Priority = 14;
         }
-        else if (collision.gameObject.CompareTag("Camera_Switch_before_room"))
+        else if (collision.CompareTag("Camera_Switch_before_room"))
         {
             vcam01.m_Priority = 10;
         }
 
-        if (collision.gameObject.CompareTag("Lever_1"))
+        if (collision.CompareTag("Lever_1"))
         {
             interact_button_text_castle_room.SetActive(true);
             interact_count = 1;
         }
 
-        if (collision.gameObject.CompareTag("Lever_2"))
+        if (collision.CompareTag("Lever_2"))
         {
             interact_button_text_castle_room.SetActive(true);
             interact_count = 2;
         }
 
-        if (collision.gameObject.CompareTag("Lever_3"))
+        if (collision.CompareTag("Lever_3"))
         {
             interact_button_text_castle_room.SetActive(true);
             interact_count = 3;
         }
 
-        if (collision.gameObject.CompareTag("Lever_4"))
+        if (collision.CompareTag("Lever_4"))
         {
             interact_button_text_castle_room.SetActive(true);
             interact_count = 4;
         }
 
-        if (collision.gameObject.CompareTag("Book"))
+        if (collision.CompareTag("Book"))
         {
             book_count = 1;
         }
@@ -180,23 +182,25 @@ public class PlayerController : MonoBehaviour
             interact_button_text_castle_room.SetActive(false);
             interact_count = 0;
         }
-
-        if (collision.gameObject.CompareTag("Lever_2"))
+        else if (collision.gameObject.CompareTag("Lever_2"))
+        {
+            interact_button_text_castle_room.SetActive(false);
+            interact_count = 0;
+        }
+        else if (collision.gameObject.CompareTag("Lever_3"))
+        {
+            interact_button_text_castle_room.SetActive(false);
+            interact_count = 0;
+        }
+        else if (collision.gameObject.CompareTag("Lever_4"))
         {
             interact_button_text_castle_room.SetActive(false);
             interact_count = 0;
         }
 
-        if (collision.gameObject.CompareTag("Lever_3"))
+        if (collision.CompareTag("Book"))
         {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
-        }
-
-        if (collision.gameObject.CompareTag("Lever_4"))
-        {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
+            book_count = 0;
         }
     }
     #endregion
@@ -247,11 +251,11 @@ public class PlayerController : MonoBehaviour
             lever_count = 0;
         }
 
-        if(context.performed && book_count == 1)
+        if(context.performed && book_count == 1 && inventar_count == 0)
         {
             book.SetActive(false);
             inventar_Book.SetActive(true);
-
+            inventar_count = 1;
         }
 
          if(context.performed && book_count == 2)
@@ -278,9 +282,10 @@ public class PlayerController : MonoBehaviour
     {
         bookshelf_cutscene.SetActive(true);
         inventar_Book.SetActive(false);
-        full_Bookshelf.SetActive(true);
+        empty_Bookshelf.SetActive(false);
+        inventar_count = 0;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         next_Scene_Door.GetComponent<BoxCollider2D>().enabled = true;
     }
