@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerInteract : MonoBehaviour
 {
     #region Variables
-    public int lever_count = 0;
-
     public int interact_count = 0;
 
     public int book_count = 0;
@@ -17,8 +15,6 @@ public class PlayerInteract : MonoBehaviour
     #endregion
 
     #region GameObjetcs
-
-    public GameObject first_door;
 
     public GameObject interact_button_text_for_room;
 
@@ -80,14 +76,6 @@ public class PlayerInteract : MonoBehaviour
     #endregion
 
     #region Updates
-
-    void Update()
-    {
-        if (lever_count == 4)
-        {
-            first_door.SetActive(false);
-        }
-    }
     #endregion
 
     #region OntriggerEnter&OnTriggerExit
@@ -247,34 +235,6 @@ public class PlayerInteract : MonoBehaviour
     #region CallbackContext Methods
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.performed && lever_count == 0 && interact_count == 1)
-        {
-            lever_count++;
-        }
-        else if (context.performed && lever_count == 1 && interact_count == 2)
-        {
-            lever_count++;
-        }
-        else if (context.performed && lever_count == 2 && interact_count == 3)
-        {
-            lever_count++;
-        }
-        else if (context.performed && lever_count == 3 && interact_count == 4)
-        {
-            lever_count++;
-        }
-        else if (context.performed && lever_count > 0 && interact_count >= 1 && interact_count < 5)
-        {
-            lever_count = 0;
-        }
-        else if (context.performed && lever_count > 1 && interact_count >= 1 && interact_count < 5)
-        {
-            lever_count = 0;
-        }
-        else if (context.performed && lever_count > 2 && interact_count >= 1 && interact_count < 5)
-        {
-            lever_count = 0;
-        }
 
         if (context.performed && book_count == 1 && inventar_count == 0)
         {
