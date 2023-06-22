@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb9efb5dcdb69c14bacdf964847a8a50
+guid: 72bfd1d28439de8468e5c44f4489cc39
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bridge_0
+      name: Player_Fall_SpriteShee_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 110
-        width: 560
-        height: 240
+        x: 26
+        y: 123
+        width: 26
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72003546555a29a46b0aa114de43ad15
-      internalID: -1638685811
+      spriteID: 3f303eb48f974e649adc990c5158029f
+      internalID: -224070441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_2
+      name: Player_Fall_SpriteShee_1
       rect:
         serializedVersion: 2
-        x: 970
-        y: 110
-        width: 330
-        height: 240
+        x: 27
+        y: 104
+        width: 27
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e95f340a951f5046a2cf526f2bb0d53
-      internalID: 551255548
+      spriteID: 04b832b21269e724ca5e95233ecdb75b
+      internalID: 1632531118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_5
+      name: Player_Fall_SpriteShee_2
       rect:
         serializedVersion: 2
-        x: 1570
-        y: 110
-        width: 290
-        height: 230
+        x: 27
+        y: 86
+        width: 27
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78439122e6ca8cb4284e66d4940780a0
-      internalID: -1199022882
+      spriteID: 7e5c8ba37bf3c6d42a39b27d6d3def90
+      internalID: -2000989328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Fall_SpriteShee_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 69
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c25325d0961484e9d1c8402385ae54
+      internalID: 68622411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Fall_SpriteShee_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 52
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257a92fa966f37488cea5866374a313
+      internalID: 1624925502
       vertices: []
       indices: 
       edges: []
@@ -180,15 +222,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bridge_0: -1638685811
-      Bridge_1: -878580793
-      Bridge_2: 551255548
-      Bridge_3: 1893222407
-      Bridge_4: -2075053545
-      Bridge_5: -1199022882
-      Bridge_6: 291128109
-      Bridge_7: -743333979
-      Bridge_8: -471409109
+      Player_Fall_SpriteShee_0: -224070441
+      Player_Fall_SpriteShee_1: 1632531118
+      Player_Fall_SpriteShee_2: -2000989328
+      Player_Fall_SpriteShee_3: 68622411
+      Player_Fall_SpriteShee_4: 1624925502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
