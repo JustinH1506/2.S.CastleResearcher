@@ -1,26 +1,11 @@
+using Cinemachine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Cinemachine;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerInteract : MonoBehaviour
 {
-    #region Components
-
-    public Transform groundPoint;
-
-    public Rigidbody2D rb;
-
-    public SpriteRenderer sr;
-
-    public Animator anim;
-
-    public LayerMask WhatIsGround;
-
-    #endregion
-
     #region Variables
     public int lever_count = 0;
 
@@ -29,14 +14,6 @@ public class PlayerController : MonoBehaviour
     public int book_count = 0;
 
     public int inventar_count;
-
-    public float moveSpeed, jumpForce;
-
-    private float inputX;
-
-    public bool isWalking;
-
-    private bool isGrounded;
     #endregion
 
     #region GameObjetcs
@@ -92,9 +69,9 @@ public class PlayerController : MonoBehaviour
     public GameObject protein_Statue_Fake_2;
 
     public GameObject handcuff_Statue_Fake_2;
- 
 
-    #endregion 
+
+    #endregion
 
     #region Serialized field
     [SerializeField] CinemachineVirtualCamera vcam01;
@@ -103,43 +80,12 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Updates
-    private void Start()
-    {
-     
-    }
 
     void Update()
     {
         if (lever_count == 4)
         {
             first_door.SetActive(false);
-        }
-
-        anim.SetBool("isWalking", isWalking);
-    }
-
-    private void FixedUpdate()
-    {
-        isGrounded = Physics2D.OverlapCircle(groundPoint.position, .2f, WhatIsGround);
-
-        rb.velocity = new Vector2(inputX * moveSpeed, rb.velocity.y);
-
-        if(rb.velocity.x < 0f)
-        {
-            sr.flipX = true;
-        }
-        else if(rb.velocity.x > 0f)
-        {
-            sr.flipX = false;
-        }
-
-        if(rb.velocity.x != 0)
-        {
-            isWalking = true;
-        }
-        else if(rb.velocity.x == 0)
-        {
-            isWalking = false;
         }
     }
     #endregion
@@ -190,7 +136,7 @@ public class PlayerController : MonoBehaviour
             interact_count = 4;
         }
 
-       if (collision.CompareTag("Book"))
+        if (collision.CompareTag("Book"))
         {
             book_count = 1;
         }
@@ -299,27 +245,13 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region CallbackContext Methods
-    public void Move(InputAction.CallbackContext context)
-    {
-        inputX = context.ReadValue<Vector2>().x;
-    }
-
-    public void Jump(InputAction.CallbackContext context)
-    {
-        if(context.performed && isGrounded)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            Debug.Log("Working");
-        }
-    }   
-
     public void Interact(InputAction.CallbackContext context)
     {
-        if(context.performed && lever_count == 0 && interact_count == 1)
+        if (context.performed && lever_count == 0 && interact_count == 1)
         {
             lever_count++;
         }
-        else if (context.performed && lever_count == 1 && interact_count == 2) 
+        else if (context.performed && lever_count == 1 && interact_count == 2)
         {
             lever_count++;
         }
@@ -335,47 +267,47 @@ public class PlayerController : MonoBehaviour
         {
             lever_count = 0;
         }
-        else if (context.performed && lever_count > 1 && interact_count >=1 && interact_count < 5)
+        else if (context.performed && lever_count > 1 && interact_count >= 1 && interact_count < 5)
         {
             lever_count = 0;
         }
-        else if (context.performed && lever_count > 2 && interact_count >=1 && interact_count < 5)
+        else if (context.performed && lever_count > 2 && interact_count >= 1 && interact_count < 5)
         {
             lever_count = 0;
         }
 
-        if(context.performed && book_count == 1 && inventar_count == 0)
+        if (context.performed && book_count == 1 && inventar_count == 0)
         {
             book.SetActive(false);
             inventar_Book.SetActive(true);
             inventar_count = 1;
         }
 
-         if(context.performed && book_count == 2)
+        if (context.performed && book_count == 2)
         {
             StartCoroutine("Wait");
         }
 
-         if(context.performed && interact_count == 7 && inventar_count == 0)
+        if (context.performed && interact_count == 7 && inventar_count == 0)
         {
             proteinpowder_Outside.SetActive(false);
             proteinpowder_Inventar.SetActive(true);
             inventar_count = 1;
         }
-         else if(context.performed && interact_count == 8 && inventar_count == 0)
+        else if (context.performed && interact_count == 8 && inventar_count == 0)
         {
             handcuffs_Outside.SetActive(false);
             handcuffs_Inventar.SetActive(true);
             inventar_count = 1;
         }
-         else if(context.performed && interact_count == 9 && inventar_count == 0)
+        else if (context.performed && interact_count == 9 && inventar_count == 0)
         {
             ribbons_Outside.SetActive(false);
             ribbon_Inventar.SetActive(true);
             inventar_count = 1;
         }
 
-         if(proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 10)
+        if (proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 10)
         {
             protein_Empty_Statue.SetActive(false);
             protein_Statue.SetActive(true);
@@ -384,7 +316,7 @@ public class PlayerController : MonoBehaviour
 
             inventar_count = 0;
         }
-         else if(handcuffs_Inventar.activeInHierarchy && context.performed && interact_count == 10)
+        else if (handcuffs_Inventar.activeInHierarchy && context.performed && interact_count == 10)
         {
             protein_Empty_Statue.SetActive(false);
             handcuff_Statue_Fake_1.SetActive(true);
@@ -412,7 +344,7 @@ public class PlayerController : MonoBehaviour
 
             inventar_count = 0;
         }
-        else if(proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 11)
+        else if (proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 11)
         {
 
             handcuff_Empty_Statue.SetActive(false);
@@ -422,7 +354,7 @@ public class PlayerController : MonoBehaviour
 
             inventar_count = 0;
         }
-        else if(ribbon_Inventar.activeInHierarchy && context.performed && interact_count == 11)
+        else if (ribbon_Inventar.activeInHierarchy && context.performed && interact_count == 11)
         {
 
             handcuff_Empty_Statue.SetActive(false);
@@ -433,7 +365,7 @@ public class PlayerController : MonoBehaviour
             inventar_count = 0;
         }
 
-        if(ribbon_Inventar.activeInHierarchy && context.performed && interact_count == 12)
+        if (ribbon_Inventar.activeInHierarchy && context.performed && interact_count == 12)
         {
             ribbon_empty_Statue.SetActive(false);
             ribbon_Statue.SetActive(true);
@@ -442,7 +374,7 @@ public class PlayerController : MonoBehaviour
 
             inventar_count = 0;
         }
-        else if(proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 12)
+        else if (proteinpowder_Inventar.activeInHierarchy && context.performed && interact_count == 12)
         {
             ribbon_empty_Statue.SetActive(false);
             protein_Statue_Fake_2.SetActive(true);
@@ -461,7 +393,7 @@ public class PlayerController : MonoBehaviour
             inventar_count = 0;
         }
 
-        if(context.performed && interact_count == 10 && inventar_count == 0 && handcuff_Statue_Fake_1.activeInHierarchy)
+        if (context.performed && interact_count == 10 && inventar_count == 0 && handcuff_Statue_Fake_1.activeInHierarchy)
         {
             protein_Empty_Statue.SetActive(true);
             handcuff_Statue_Fake_1.SetActive(false);
@@ -470,7 +402,7 @@ public class PlayerController : MonoBehaviour
 
             interact_count = 1;
         }
-        else if(context.performed && interact_count == 10 && inventar_count == 0 && ribbon_Statue_Fake_1.activeInHierarchy)
+        else if (context.performed && interact_count == 10 && inventar_count == 0 && ribbon_Statue_Fake_1.activeInHierarchy)
         {
             protein_Empty_Statue.SetActive(true);
             ribbon_Statue_Fake_1.SetActive(false);
@@ -480,14 +412,14 @@ public class PlayerController : MonoBehaviour
             interact_count = 1;
         }
 
-        if(context.performed && interact_count == 11 && inventar_count == 0 && protein_Statue_Fake_1.activeInHierarchy)
+        if (context.performed && interact_count == 11 && inventar_count == 0 && protein_Statue_Fake_1.activeInHierarchy)
         {
             handcuff_Empty_Statue.SetActive(true);
             protein_Statue_Fake_1.SetActive(false);
 
             proteinpowder_Inventar.SetActive(true);
 
-            interact_count = 1; 
+            interact_count = 1;
         }
         else if (context.performed && interact_count == 11 && inventar_count == 0 && ribbon_Statue_Fake_2.activeInHierarchy)
         {
@@ -499,7 +431,7 @@ public class PlayerController : MonoBehaviour
             interact_count = 1;
         }
 
-        if(context.performed && interact_count == 12 && inventar_count == 0 && protein_Statue_Fake_2.activeInHierarchy)
+        if (context.performed && interact_count == 12 && inventar_count == 0 && protein_Statue_Fake_2.activeInHierarchy)
         {
             ribbon_empty_Statue.SetActive(true);
             protein_Statue_Fake_2.SetActive(false);
