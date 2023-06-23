@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a334d171d1994e44949a87e32d35773
+guid: 4dc989e16e88db64a8725ac62bb94892
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 11
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,64 +107,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Charakter_Animation_Sheet_0
+      name: Player_Walk_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 29
+        x: 111
+        y: 30
         width: 20
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa8f077d7916224882abe7db6e7c220
-      internalID: -891951982
+      spriteID: 5b5f64b8d0173a640824b992f54caaa3
+      internalID: 572093379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Charakter_Animation_Sheet_1
+      name: Player_Walk_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 29
+        x: 135
+        y: 30
         width: 19
         height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47368422, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfc0bc8af532d94cbc20223df891fa7
-      internalID: -468198864
+      spriteID: 69af7c33d906fcc4c829c9409db00877
+      internalID: 1501240694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Charakter_Animation_Sheet_2
+      name: Player_Walk_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 29
+        x: 158
+        y: 30
         width: 20
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 162255916a2423f49811de58d63dbfa5
-      internalID: 2037731043
+      spriteID: 31b7b79a332e9c948baaa2f374e7c5c7
+      internalID: 223142683
       vertices: []
       indices: 
       edges: []
@@ -180,9 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Charakter_Animation_Sheet_0: -891951982
-      Charakter_Animation_Sheet_1: -468198864
-      Charakter_Animation_Sheet_2: 2037731043
+      Player_Walk_0: 572093379
+      Player_Walk_1: 1501240694
+      Player_Walk_2: 223142683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

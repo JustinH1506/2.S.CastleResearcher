@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 72bfd1d28439de8468e5c44f4489cc39
+guid: 1374c3804190c1a4c82f4623967488c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_0
+      name: Player_Idle_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 123
-        width: 26
-        height: 15
+        x: 111
+        y: 30
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfc0d30ff69c5f4fa1c6d517b011a28
+      internalID: -1161460821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Idle_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 30
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.47368422, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc621a2ceb9c96459da5c95db3abca1
+      internalID: -836372311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Idle_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 30
+        width: 20
+        height: 24
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,92 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f303eb48f974e649adc990c5158029f
-      internalID: -224070441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Fall_SpriteShee_1
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 104
-        width: 27
-        height: 14
-      alignment: 9
-      pivot: {x: 0.5185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04b832b21269e724ca5e95233ecdb75b
-      internalID: 1632531118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Fall_SpriteShee_2
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 86
-        width: 27
-        height: 14
-      alignment: 9
-      pivot: {x: 0.5185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e5c8ba37bf3c6d42a39b27d6d3def90
-      internalID: -2000989328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Fall_SpriteShee_3
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 69
-        width: 27
-        height: 14
-      alignment: 9
-      pivot: {x: 0.5185185, y: -0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4c25325d0961484e9d1c8402385ae54
-      internalID: 68622411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Fall_SpriteShee_4
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 52
-        width: 27
-        height: 14
-      alignment: 9
-      pivot: {x: 0.5185185, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2257a92fa966f37488cea5866374a313
-      internalID: 1624925502
+      spriteID: 12e3c32f35ba4d849a359bb1c23d9afb
+      internalID: 180474927
       vertices: []
       indices: 
       edges: []
@@ -222,11 +180,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Fall_SpriteShee_0: -224070441
-      Player_Fall_SpriteShee_1: 1632531118
-      Player_Fall_SpriteShee_2: -2000989328
-      Player_Fall_SpriteShee_3: 68622411
-      Player_Fall_SpriteShee_4: 1624925502
+      Player_Idle_SpriteSheet_0: -1161460821
+      Player_Idle_SpriteSheet_1: -836372311
+      Player_Idle_SpriteSheet_2: 180474927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -103,27 +103,6 @@ public class PlayerInteract : MonoBehaviour
             vcam01.m_Priority = 10;
         }
 
-        if (collision.CompareTag("Lever_1"))
-        {
-            interact_button_text_castle_room.SetActive(true);
-            interact_count = 1;
-        }
-        else if (collision.CompareTag("Lever_2"))
-        {
-            interact_button_text_castle_room.SetActive(true);
-            interact_count = 2;
-        }
-        else if (collision.CompareTag("Lever_3"))
-        {
-            interact_button_text_castle_room.SetActive(true);
-            interact_count = 3;
-        }
-        else if (collision.CompareTag("Lever_4"))
-        {
-            interact_button_text_castle_room.SetActive(true);
-            interact_count = 4;
-        }
-
         if (collision.CompareTag("Book"))
         {
             book_count = 1;
@@ -170,27 +149,6 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Lever_1"))
-        {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
-        }
-        else if (collision.gameObject.CompareTag("Lever_2"))
-        {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
-        }
-        else if (collision.gameObject.CompareTag("Lever_3"))
-        {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
-        }
-        else if (collision.gameObject.CompareTag("Lever_4"))
-        {
-            interact_button_text_castle_room.SetActive(false);
-            interact_count = 0;
-        }
-
         if (collision.CompareTag("Door_1"))
         {
             interact_count = 0;

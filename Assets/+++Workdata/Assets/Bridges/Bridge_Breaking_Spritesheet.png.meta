@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 72bfd1d28439de8468e5c44f4489cc39
+guid: c3894cf3c752e6d40900ee973a5a2ad9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 11
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,106 +107,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_0
+      name: Bridge_Breaking_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 123
-        width: 26
-        height: 15
+        x: 32
+        y: 594
+        width: 195
+        height: 82
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.36923078, y: 0.36585364}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f303eb48f974e649adc990c5158029f
-      internalID: -224070441
+      spriteID: 0c31f9b7a0f5e2648b71049ec00db073
+      internalID: -1250078018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_1
+      name: Bridge_Breaking_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 27
-        y: 104
-        width: 27
-        height: 14
+        x: 34
+        y: 490
+        width: 195
+        height: 82
       alignment: 9
-      pivot: {x: 0.5185185, y: 0}
+      pivot: {x: 0.36923078, y: 0.36585364}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b832b21269e724ca5e95233ecdb75b
-      internalID: 1632531118
+      spriteID: d8e7eba481d37294e9553474fc510032
+      internalID: 1450185672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_2
+      name: Bridge_Breaking_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 27
-        y: 86
-        width: 27
-        height: 14
+        x: 33
+        y: 381
+        width: 195
+        height: 85
       alignment: 9
-      pivot: {x: 0.5185185, y: 0}
+      pivot: {x: 0.36923078, y: 0.3882353}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e5c8ba37bf3c6d42a39b27d6d3def90
-      internalID: -2000989328
+      spriteID: c3095ac1cbfc16445858bc7e58faabd9
+      internalID: 1631442932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_3
+      name: Bridge_Breaking_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 69
-        width: 27
-        height: 14
+        x: 36
+        y: 254
+        width: 195
+        height: 93
       alignment: 9
-      pivot: {x: 0.5185185, y: -0}
+      pivot: {x: 0.36923078, y: 0.4408602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c25325d0961484e9d1c8402385ae54
-      internalID: 68622411
+      spriteID: dc5fcaaab3401c44cb7585c637055a64
+      internalID: 960610925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Fall_SpriteShee_4
+      name: Bridge_Breaking_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 27
-        y: 52
-        width: 27
-        height: 14
+        x: 37
+        y: 143
+        width: 195
+        height: 95
       alignment: 9
-      pivot: {x: 0.5185185, y: 0}
+      pivot: {x: 0.36923078, y: 0.4526316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2257a92fa966f37488cea5866374a313
-      internalID: 1624925502
+      spriteID: b6bbec0a290002a4dbad219c74be2964
+      internalID: -1479510701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bridge_Breaking_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 38
+        width: 195
+        height: 102
+      alignment: 9
+      pivot: {x: 0.36923078, y: 0.4901961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46853bfa34c235a499fac190f5658a42
+      internalID: -463333227
       vertices: []
       indices: 
       edges: []
@@ -222,11 +243,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Fall_SpriteShee_0: -224070441
-      Player_Fall_SpriteShee_1: 1632531118
-      Player_Fall_SpriteShee_2: -2000989328
-      Player_Fall_SpriteShee_3: 68622411
-      Player_Fall_SpriteShee_4: 1624925502
+      Bridge_Breaking_Spritesheet_0: -1250078018
+      Bridge_Breaking_Spritesheet_1: 1450185672
+      Bridge_Breaking_Spritesheet_2: 1631442932
+      Bridge_Breaking_Spritesheet_3: 960610925
+      Bridge_Breaking_Spritesheet_4: -1966706872
+      Bridge_Breaking_Spritesheet_5: -1479510701
+      Bridge_Breaking_Spritesheet_6: -62458367
+      Bridge_Breaking_Spritesheet_7: -463333227
+      Bridge_Breaking_Spritesheet_8: 79711997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
