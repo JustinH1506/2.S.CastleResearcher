@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d16e2aadb146b094d9ff79a2f373cee8
+guid: 84690720fa135f847b5914fe02cab70e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 140
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,568 +107,610 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hint_0
+      name: Environment Parts_0
       rect:
         serializedVersion: 2
-        x: 659
-        y: 595
-        width: 26
-        height: 15
+        x: 359
+        y: 1779
+        width: 362
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b25e76a2022ab945b44dacec0f6c923
-      internalID: 961301682
+      spriteID: d6f928e70a7d95849924b755d77acb6e
+      internalID: 634422113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_1
+      name: Environment Parts_1
       rect:
         serializedVersion: 2
-        x: 660
-        y: 576
-        width: 27
-        height: 14
+        x: 869
+        y: 1799
+        width: 662
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f0e304a9ceea046a9efb00f3c8d25f
-      internalID: -529631451
+      spriteID: 8836a3523bb0421499ec7f0ecb53f890
+      internalID: 1449345394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_2
+      name: Environment Parts_3
       rect:
         serializedVersion: 2
-        x: 660
-        y: 558
-        width: 27
-        height: 14
+        x: 1728
+        y: 1658
+        width: 454
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f0d8a8deaefa54e9aacd5e16c6e358
-      internalID: -1423439258
+      spriteID: 142bbfa85d407b042956fb369533299a
+      internalID: -1909935365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_3
+      name: Environment Parts_4
       rect:
         serializedVersion: 2
-        x: 660
-        y: 541
-        width: 27
-        height: 14
+        x: 2308
+        y: 1708
+        width: 144
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d81b93043d90248b9953aa76671377
-      internalID: 286661514
+      spriteID: 80edf536b33b66649b9d65347ef7ebe0
+      internalID: -1772534191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_4
+      name: Environment Parts_5
       rect:
         serializedVersion: 2
-        x: 660
-        y: 524
-        width: 27
-        height: 14
+        x: 2488
+        y: 1718
+        width: 213
+        height: 175
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cbee446771956844a1b677bd5757804
-      internalID: 1436907335
+      spriteID: edd2277d514d3de4f913df06b40b0f6e
+      internalID: 123915843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_6
+      name: Environment Parts_6
       rect:
         serializedVersion: 2
-        x: 649
-        y: 470
-        width: 35
-        height: 37
+        x: 3329
+        y: 1329
+        width: 572
+        height: 543
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9c083489772c8246be16ebe1076aac8
-      internalID: -1827274066
+      spriteID: 1e0670ddc91f2814bba5ef99d4d37d14
+      internalID: 1716229251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_8
+      name: Environment Parts_7
       rect:
         serializedVersion: 2
-        x: 418
-        y: 456
-        width: 20
-        height: 24
+        x: 239
+        y: 1408
+        width: 353
+        height: 363
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 366117f3ddcc3644aa116d579c0f2110
-      internalID: -1925790644
+      spriteID: d30fb483362997241bd2016fed8aef70
+      internalID: -375622023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_9
+      name: Environment Parts_8
       rect:
         serializedVersion: 2
-        x: 441
-        y: 456
-        width: 20
-        height: 24
+        x: 788
+        y: 1469
+        width: 292
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85bab5a2e13b418459e585b2f1a95817
-      internalID: 107119730
+      spriteID: 027bd3063d760d64889049359287012e
+      internalID: 689170938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_10
+      name: Environment Parts_10
       rect:
         serializedVersion: 2
-        x: 464
-        y: 456
-        width: 20
-        height: 24
+        x: 1269
+        y: 1469
+        width: 291
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164210eee77211f40bb123c77e133fe6
-      internalID: 475154138
+      spriteID: 5d5bb219106cf5f46a74e0187600b285
+      internalID: -1323350951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_11
+      name: Environment Parts_12
       rect:
         serializedVersion: 2
-        x: 488
-        y: 456
-        width: 20
-        height: 24
+        x: 1749
+        y: 1459
+        width: 291
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d97843f8c0ae3b14094b6bb72df11db0
-      internalID: 2023464745
+      spriteID: 986bfb33467032045b35e53e6fe41344
+      internalID: 943567166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_12
+      name: Environment Parts_14
       rect:
         serializedVersion: 2
-        x: 506
-        y: 477
-        width: 9
-        height: 10
+        x: 2168
+        y: 1449
+        width: 292
+        height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1258fe70c78f9344882fb37163a96f13
-      internalID: -1594049086
+      spriteID: cf371020844ad394b9d021d4c668331b
+      internalID: -1456991601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_13
+      name: Environment Parts_16
       rect:
         serializedVersion: 2
-        x: 518
-        y: 456
-        width: 20
-        height: 24
+        x: 2530
+        y: 1439
+        width: 291
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4b11469a2c0c74fa2f853870ff859d
-      internalID: -310202083
+      spriteID: cf491f55a81df1542a13c7f45ffca4fb
+      internalID: -1401423415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_14
+      name: Environment Parts_18
       rect:
         serializedVersion: 2
-        x: 536
-        y: 476
-        width: 13
-        height: 13
+        x: 2908
+        y: 1329
+        width: 233
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7181236c022b826449f3961f5c14982b
-      internalID: 2096747177
+      spriteID: f5330fdd7d93a394ea85cd3d3649e23e
+      internalID: -159706319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_15
+      name: Environment Parts_19
       rect:
         serializedVersion: 2
-        x: 550
-        y: 456
-        width: 20
-        height: 24
+        x: 328
+        y: 1289
+        width: 124
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4917bf624f6c6cd4482510d8bb01a038
-      internalID: -361341142
+      spriteID: 68a425e9fc56be2438cf8f38309db344
+      internalID: 324436917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_16
+      name: Environment Parts_26
       rect:
         serializedVersion: 2
-        x: 568
-        y: 476
-        width: 13
-        height: 13
+        x: 1439
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769e93c10772a1d46ab2032204d1a747
-      internalID: -949435294
+      spriteID: 47ffa7c466d87be4289407b276377ae2
+      internalID: 753914207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_19
+      name: Environment Parts_27
       rect:
         serializedVersion: 2
-        x: 438
-        y: 425
-        width: 9
-        height: 10
+        x: 1739
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ceb373e317221c43b643abd244b7ec5
-      internalID: -922663046
+      spriteID: b409b8f70b0bee34ea4288454fe75f56
+      internalID: 24894285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_20
+      name: Environment Parts_28
       rect:
         serializedVersion: 2
-        x: 285
-        y: 410
-        width: 23
-        height: 15
+        x: 2059
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3772e6fa36c2b6498b425e088ed0511
-      internalID: -599050131
+      spriteID: 1ace81900762588409793145c5f90717
+      internalID: 358878921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_21
+      name: Environment Parts_29
       rect:
         serializedVersion: 2
-        x: 539
-        y: 387
-        width: 17
-        height: 24
+        x: 2369
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797660650adb63f4c9e31c0b731be922
-      internalID: -509723681
+      spriteID: b3c918ff317ee69468d8b21582dc6a90
+      internalID: 905742490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_22
+      name: Environment Parts_30
       rect:
         serializedVersion: 2
-        x: 570
-        y: 388
-        width: 17
-        height: 25
+        x: 2648
+        y: 969
+        width: 323
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab03b32fa595e3c4aa9d93125cecdb60
-      internalID: 1315258428
+      spriteID: dd90e3c2ca1cd834e9a36dc7acc5a95b
+      internalID: -1675160695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_23
+      name: Environment Parts_31
       rect:
         serializedVersion: 2
-        x: 599
-        y: 389
-        width: 20
-        height: 24
+        x: 3088
+        y: 979
+        width: 324
+        height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc58679592ca69643985399ddb989795
-      internalID: -272110163
+      spriteID: 7ec6b354ab3862e49b8d2ce87d59b3a8
+      internalID: -81447437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_24
+      name: Environment Parts_32
       rect:
         serializedVersion: 2
-        x: 626
-        y: 389
-        width: 26
-        height: 27
+        x: 229
+        y: 89
+        width: 282
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 050003f232c9a574383be1e2969c8155
-      internalID: -1591477118
+      spriteID: 27c30df125f53a4439e3a70141509c02
+      internalID: -1062102085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_25
+      name: Environment Parts_33
       rect:
         serializedVersion: 2
-        x: 655
-        y: 389
-        width: 26
-        height: 28
+        x: 559
+        y: 89
+        width: 292
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c100af92d09f1c14c9f1751ae06d904c
-      internalID: 1190332712
+      spriteID: 21dbf8e81263fd243bc2c7abc0cf5533
+      internalID: 2005148736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_26
+      name: Environment Parts_34
       rect:
         serializedVersion: 2
-        x: 402
-        y: 389
-        width: 27
-        height: 14
+        x: 888
+        y: 89
+        width: 354
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca8c2a77a2f998c43a72fbd1ace68632
-      internalID: -855167341
+      spriteID: cd28339253c6905439ffa5e79eb6dcb5
+      internalID: 2080695479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_27
+      name: Environment Parts_35
       rect:
         serializedVersion: 2
-        x: 445
-        y: 389
-        width: 23
-        height: 14
+        x: 2888
+        y: 679
+        width: 324
+        height: 292
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb6d2e4cb775c8d46820a8d3f136eea0
-      internalID: -462693212
+      spriteID: 1b3a9f6d3128c8b4e9267fa62078160b
+      internalID: -924009366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_28
+      name: Environment Parts_36
       rect:
         serializedVersion: 2
-        x: 473
-        y: 388
-        width: 17
-        height: 21
+        x: 1889
+        y: 89
+        width: 263
+        height: 543
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6198f831bd60205409ee613b4b84df98
-      internalID: -1782529976
+      spriteID: bf92b4a4d8d8a9f4c8cb458b5bd1858e
+      internalID: 1785260923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_29
+      name: Environment Parts_37
       rect:
         serializedVersion: 2
-        x: 501
-        y: 387
-        width: 17
-        height: 22
+        x: 2219
+        y: 89
+        width: 263
+        height: 543
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a37125f4c75044ea85f102031dbe08
-      internalID: -168521117
+      spriteID: f970440f1d7fdf44ba236afbe9295cfd
+      internalID: -1808584413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hint_30
+      name: Environment Parts_38
       rect:
         serializedVersion: 2
-        x: 384
-        y: 344
-        width: 20
-        height: 24
+        x: 2549
+        y: 89
+        width: 264
+        height: 543
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc857d34fa4903341a03d1463155966e
-      internalID: -671466435
+      spriteID: ab4db5e84c0761a42a03cc98a044ca27
+      internalID: 1814201318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_39
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 89
+        width: 262
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71c74fcacd364a4f811a96c1edaf114
+      internalID: -922679805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_40
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 89
+        width: 262
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a94fbfe222652479f9f2f4c3c42e06
+      internalID: -1119371203
       vertices: []
       indices: 
       edges: []
@@ -684,37 +726,47 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hint_0: 961301682
-      Hint_1: -529631451
-      Hint_10: 475154138
-      Hint_11: 2023464745
-      Hint_12: -1594049086
-      Hint_13: -310202083
-      Hint_14: 2096747177
-      Hint_15: -361341142
-      Hint_16: -949435294
-      Hint_17: -1478547372
-      Hint_18: -1123357713
-      Hint_19: -922663046
-      Hint_2: -1423439258
-      Hint_20: -599050131
-      Hint_21: -509723681
-      Hint_22: 1315258428
-      Hint_23: -272110163
-      Hint_24: -1591477118
-      Hint_25: 1190332712
-      Hint_26: -855167341
-      Hint_27: -462693212
-      Hint_28: -1782529976
-      Hint_29: -168521117
-      Hint_3: 286661514
-      Hint_30: -671466435
-      Hint_4: 1436907335
-      Hint_5: 719629180
-      Hint_6: -1827274066
-      Hint_7: -2141570236
-      Hint_8: -1925790644
-      Hint_9: 107119730
+      Environment Parts_0: 634422113
+      Environment Parts_1: 1449345394
+      Environment Parts_10: -1323350951
+      Environment Parts_11: 519327091
+      Environment Parts_12: 943567166
+      Environment Parts_13: 1513136393
+      Environment Parts_14: -1456991601
+      Environment Parts_15: -2018477391
+      Environment Parts_16: -1401423415
+      Environment Parts_17: 1831886384
+      Environment Parts_18: -159706319
+      Environment Parts_19: 324436917
+      Environment Parts_2: -1423476111
+      Environment Parts_20: -891932909
+      Environment Parts_21: 693470843
+      Environment Parts_22: 1156683795
+      Environment Parts_23: -318590878
+      Environment Parts_24: -701526097
+      Environment Parts_25: -439688398
+      Environment Parts_26: 753914207
+      Environment Parts_27: 24894285
+      Environment Parts_28: 358878921
+      Environment Parts_29: 905742490
+      Environment Parts_3: -1909935365
+      Environment Parts_30: -1675160695
+      Environment Parts_31: -81447437
+      Environment Parts_32: -1062102085
+      Environment Parts_33: 2005148736
+      Environment Parts_34: 2080695479
+      Environment Parts_35: -924009366
+      Environment Parts_36: 1785260923
+      Environment Parts_37: -1808584413
+      Environment Parts_38: 1814201318
+      Environment Parts_39: -922679805
+      Environment Parts_4: -1772534191
+      Environment Parts_40: -1119371203
+      Environment Parts_5: 123915843
+      Environment Parts_6: 1716229251
+      Environment Parts_7: -375622023
+      Environment Parts_8: 689170938
+      Environment Parts_9: -52361377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
