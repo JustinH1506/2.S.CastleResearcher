@@ -7,6 +7,11 @@ public class PillarManager : MonoBehaviour
     [SerializeField] Animator anim;
     public bool CheckContext(int pillarID)
     {
+        //if(pillarBehaviors.Length > 2)
+        ///{
+         ///pillarBehaviors[2].statueVisuals[3] = true;
+        ///}
+
         for (int i = 0; i < pillarID - 1; i++)
         {
             if (!pillarBehaviors[i].pressed)

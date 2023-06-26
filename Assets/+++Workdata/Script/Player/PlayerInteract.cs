@@ -66,6 +66,8 @@ public class PlayerInteract : MonoBehaviour
 
     public GameObject handcuff_Statue_Fake_2;
 
+    public GameObject hint_1;
+
 
     #endregion
 
@@ -145,6 +147,11 @@ public class PlayerInteract : MonoBehaviour
         {
             interact_count = 12;
         }
+
+        if (collision.CompareTag("CameraSwitch"))
+        {
+            StartCoroutine("Hint");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -159,6 +166,11 @@ public class PlayerInteract : MonoBehaviour
         }
 
         if (collision.CompareTag("Book"))
+        {
+            book_count = 0;
+        }
+
+        if (book.activeInHierarchy == false && collision.CompareTag("Bookshelf"))
         {
             book_count = 0;
         }
@@ -386,13 +398,27 @@ public class PlayerInteract : MonoBehaviour
     public IEnumerator Wait()
     {
         bookshelf_cutscene.SetActive(true);
+
         inventar_Book.SetActive(false);
+
         empty_Bookshelf.SetActive(false);
+
         inventar_count = 0;
 
         yield return new WaitForSeconds(3f);
 
         next_Scene_Door.GetComponent<BoxCollider2D>().enabled = true;
+    }
+
+    public IEnumerator Hint()
+    {
+        yield return new WaitForSeconds(10);
+
+        hint_1.SetActive(true);
+
+        yield return new WaitForSeconds(10);
+
+        hint_1.SetActive(false);
     }
     #endregion
 }
