@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
@@ -11,17 +10,15 @@ public class ItemManager : MonoBehaviour
 
     public bool CheckItems(int itemID)
     {
-      for (int i = 0; i <= itemID; i++)
+        for (int i = 0; i < itemID; i++)
         {
-            if (itemBehaviour.pressed)
+            if (i != itemID)
             {
-                itemObjects_InGame[i].SetActive(false);
-
-                itemObjects_Inventar[i].SetActive(true);
-
-                return true;
+                return false;
             }
         }
-      return false;
+        gameObject.SetActive(false);
+        itemObjects_Inventar[itemID].SetActive(true);
+        return true;
     }
 }

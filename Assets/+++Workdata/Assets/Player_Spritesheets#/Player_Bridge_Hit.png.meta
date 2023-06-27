@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_16
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 387
+        width: 17
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5294118, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beedeb2feea6b7d4896acaf4f7f99a11
+      internalID: 816548462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_17
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 388
+        width: 17
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5294118, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ca329d928bdb4f86def456d8af020
+      internalID: 1305466552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 389
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.55, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d07e1ccac0c54946b2e5cf8d8a31564
+      internalID: -1910212519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_19
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 389
+        width: 46
+        height: 33
+      alignment: 9
+      pivot: {x: 0.26086956, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579a858750c8a7d45bf5c5c4ac6743e6
+      internalID: 280786263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_20
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 389
+        width: 27
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5185185, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415a97b2d5b117c4985e5405cf562324
+      internalID: 1127911648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_21
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 389
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5217391, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcd2fe4d28593745aea6ee0a8353aa5
+      internalID: 1785326626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_22
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 388
+        width: 17
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5294118, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88132d159becd14b83bb976f59fd82a
+      internalID: -1763858049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Bridge_Hit_23
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 387
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5294118, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74063599eb676344be782296d61ca42
+      internalID: -413821603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +284,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_Bridge_Hit_0: 190497216
+      Player_Bridge_Hit_1: -391809152
+      Player_Bridge_Hit_10: 822338087
+      Player_Bridge_Hit_11: -231338467
+      Player_Bridge_Hit_12: -1166734268
+      Player_Bridge_Hit_13: -40102580
+      Player_Bridge_Hit_14: -2074861597
+      Player_Bridge_Hit_15: -1554931277
+      Player_Bridge_Hit_16: 816548462
+      Player_Bridge_Hit_17: 1305466552
+      Player_Bridge_Hit_18: -1910212519
+      Player_Bridge_Hit_19: 280786263
+      Player_Bridge_Hit_2: -2104152036
+      Player_Bridge_Hit_20: 1127911648
+      Player_Bridge_Hit_21: 1785326626
+      Player_Bridge_Hit_22: -1763858049
+      Player_Bridge_Hit_23: -413821603
+      Player_Bridge_Hit_24: -387524219
+      Player_Bridge_Hit_3: 2063949328
+      Player_Bridge_Hit_4: -1738198627
+      Player_Bridge_Hit_5: -1821966092
+      Player_Bridge_Hit_6: -768721194
+      Player_Bridge_Hit_7: 796245875
+      Player_Bridge_Hit_8: 355752927
+      Player_Bridge_Hit_9: -774264913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

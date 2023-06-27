@@ -37,7 +37,7 @@ Transform:
   m_Children:
   - {fileID: 7310725313548401293}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2591889424968081518
 SpriteRenderer:
@@ -151,6 +151,7 @@ MonoBehaviour:
   ribbon_empty_Statue: {fileID: 0}
   protein_Statue_Fake_2: {fileID: 0}
   handcuff_Statue_Fake_2: {fileID: 0}
+  hint_1: {fileID: 0}
   vcam01: {fileID: 0}
   vcam02: {fileID: 0}
 --- !u!70 &2273519672889946092

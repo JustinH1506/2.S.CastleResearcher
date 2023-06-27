@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,12 +110,12 @@ TextureImporter:
       name: Player_Scared_0
       rect:
         serializedVersion: 2
-        x: 418
-        y: 456
-        width: 20
-        height: 24
+        x: 6587
+        y: 5947
+        width: 268
+        height: 157
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: -0.0024818373}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,12 +131,12 @@ TextureImporter:
       name: Player_Scared_1
       rect:
         serializedVersion: 2
-        x: 441
-        y: 456
-        width: 20
-        height: 24
+        x: 6597
+        y: 5757
+        width: 278
+        height: 146
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.5, y: 0.0054312926}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,10 +152,10 @@ TextureImporter:
       name: Player_Scared_2
       rect:
         serializedVersion: 2
-        x: 464
-        y: 456
-        width: 20
-        height: 24
+        x: 6597
+        y: 5576
+        width: 278
+        height: 147
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,12 +173,12 @@ TextureImporter:
       name: Player_Scared_3
       rect:
         serializedVersion: 2
-        x: 488
-        y: 456
-        width: 27
-        height: 31
+        x: 6597
+        y: 5405
+        width: 278
+        height: 147
       alignment: 9
-      pivot: {x: 0.3703704, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: Player_Scared_5
       rect:
         serializedVersion: 2
-        x: 518
-        y: 456
-        width: 31
-        height: 33
+        x: 4175
+        y: 4556
+        width: 210
+        height: 249
       alignment: 9
-      pivot: {x: 0.32258064, y: -0}
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: Player_Scared_7
       rect:
         serializedVersion: 2
-        x: 550
-        y: 456
-        width: 31
-        height: 33
+        x: 4639
+        y: 4556
+        width: 205
+        height: 249
       alignment: 9
-      pivot: {x: 0.32258064, y: -0}
+      pivot: {x: 0.502439, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,22 +233,379 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Scared_9
+      name: Player_Scared_4
       rect:
         serializedVersion: 2
-        x: 438
-        y: 425
-        width: 9
-        height: 10
+        x: 6597
+        y: 5234
+        width: 278
+        height: 147
       alignment: 9
-      pivot: {x: 0.5555556, y: 0}
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc3a13fb981daff4eb7084fe4c6e328f
-      internalID: -1279037516
+      spriteID: c8da351c9cd370147a50b6d150cd21bf
+      internalID: -247529750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_6
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 4556
+        width: 205
+        height: 249
+      alignment: 9
+      pivot: {x: 0.49756098, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb289cf081253a043b9c1e3f470a0cd1
+      internalID: 769030064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_8
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 4556
+        width: 274
+        height: 316
+      alignment: 9
+      pivot: {x: 0.3759124, y: -0.003164557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1571ba744b6b1fc49a134b081ee7df5c
+      internalID: 305918432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_10
+      rect:
+        serializedVersion: 2
+        x: 5176
+        y: 4556
+        width: 315
+        height: 335
+      alignment: 9
+      pivot: {x: 0.32380953, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d5aed017e92b245abd7bcfea956906
+      internalID: -1178319036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_12
+      rect:
+        serializedVersion: 2
+        x: 5498
+        y: 4556
+        width: 311
+        height: 336
+      alignment: 9
+      pivot: {x: 0.32475883, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c96b3fb422ca55409609bdb79d880e4
+      internalID: -893070837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_14
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 4238
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d9955203fe15a45add9248e39c45bc
+      internalID: 836615138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_15
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 4248
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3a35511cef5724f86fd8d4bfb6c399
+      internalID: 1163249609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_16
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 4097
+        width: 234
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22496775022cf24b840042d35fe8395
+      internalID: 144227270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_17
+      rect:
+        serializedVersion: 2
+        x: 5386
+        y: 3867
+        width: 180
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddc351196f45ee4e94461019537afc6
+      internalID: -766244445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_18
+      rect:
+        serializedVersion: 2
+        x: 5698
+        y: 3877
+        width: 176
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b59f3620014c29448801346a6a47eaa
+      internalID: 2126445178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_19
+      rect:
+        serializedVersion: 2
+        x: 5986
+        y: 3887
+        width: 210
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8186550abda0524c8f315d8ea00e451
+      internalID: 1145869371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_20
+      rect:
+        serializedVersion: 2
+        x: 6255
+        y: 3887
+        width: 268
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8564fda600863c49b897d80997f7f8e
+      internalID: 744964396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_21
+      rect:
+        serializedVersion: 2
+        x: 6548
+        y: 3887
+        width: 268
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d81cfadab2714c9829d49567d0cc4
+      internalID: 860455584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_22
+      rect:
+        serializedVersion: 2
+        x: 4019
+        y: 3887
+        width: 273
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7808a2ff351a472409f2b53c1ef30eed
+      internalID: 1237108857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_23
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 3887
+        width: 235
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55619fa0e9e185d4c88b309896a6463d
+      internalID: 714916394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_24
+      rect:
+        serializedVersion: 2
+        x: 4727
+        y: 3877
+        width: 175
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba93d95e6128d704697b0150ea6cb031
+      internalID: -626673287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_25
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 3867
+        width: 181
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c26e992740dd846bd02a474ee1d6a1
+      internalID: -1993864790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Scared_26
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 3438
+        width: 205
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef31311460b8dfd41801f577b3ce7013
+      internalID: -96804138
       vertices: []
       indices: 
       edges: []
@@ -266,7 +623,24 @@ TextureImporter:
     nameFileIdTable:
       Player_Scared_0: 488755884
       Player_Scared_1: -161395129
+      Player_Scared_10: -1178319036
+      Player_Scared_11: -139409389
+      Player_Scared_12: -893070837
+      Player_Scared_13: -777359252
+      Player_Scared_14: 836615138
+      Player_Scared_15: 1163249609
+      Player_Scared_16: 144227270
+      Player_Scared_17: -766244445
+      Player_Scared_18: 2126445178
+      Player_Scared_19: 1145869371
       Player_Scared_2: 31606199
+      Player_Scared_20: 744964396
+      Player_Scared_21: 860455584
+      Player_Scared_22: 1237108857
+      Player_Scared_23: 714916394
+      Player_Scared_24: -626673287
+      Player_Scared_25: -1993864790
+      Player_Scared_26: -96804138
       Player_Scared_3: 735853088
       Player_Scared_4: -247529750
       Player_Scared_5: -464444486
