@@ -188,6 +188,7 @@ MonoBehaviour:
   pillarID: 0
   pillarManager: {fileID: 0}
   player: {fileID: 0}
+  anim: {fileID: 0}
   pressed: 0
 --- !u!61 &6156990486185447903
 BoxCollider2D:

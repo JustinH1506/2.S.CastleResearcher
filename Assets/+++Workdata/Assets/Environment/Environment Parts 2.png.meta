@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34a6aa438e4f45f4a96fa40de1a5fee7
+guid: 9584f83a38c80f04cb17befdd3a25b7b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,505 +107,610 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broken_Pillars_0
+      name: Environment Parts_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 210
-        width: 64
-        height: 64
+        x: 359
+        y: 1779
+        width: 362
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4209272e2a9c54741b067e78443278f5
-      internalID: -1289620025
+      spriteID: d6f928e70a7d95849924b755d77acb6e
+      internalID: 634422113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_1
+      name: Environment Parts_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 210
-        width: 64
-        height: 64
+        x: 869
+        y: 1799
+        width: 662
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 190792b083c57c549a805a3170b72574
-      internalID: 1748166383
+      spriteID: 8836a3523bb0421499ec7f0ecb53f890
+      internalID: 1449345394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_2
+      name: Environment Parts_3
       rect:
         serializedVersion: 2
-        x: 448
-        y: 210
-        width: 64
-        height: 64
+        x: 1728
+        y: 1658
+        width: 454
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3136b4cd4e8cc8342a8df628bf34a10a
-      internalID: 1209179434
+      spriteID: 142bbfa85d407b042956fb369533299a
+      internalID: -1909935365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_3
+      name: Environment Parts_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 146
-        width: 64
-        height: 64
+        x: 2308
+        y: 1708
+        width: 144
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d4d70b93648fb14e870be1d837bdef2
-      internalID: 192801008
+      spriteID: 80edf536b33b66649b9d65347ef7ebe0
+      internalID: -1772534191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_4
+      name: Environment Parts_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 146
-        width: 64
-        height: 64
+        x: 2488
+        y: 1718
+        width: 213
+        height: 175
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25bac56d119e03d44b5d57b95ae9b35e
-      internalID: -1590976662
+      spriteID: edd2277d514d3de4f913df06b40b0f6e
+      internalID: 123915843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_5
+      name: Environment Parts_6
       rect:
         serializedVersion: 2
-        x: 256
-        y: 146
-        width: 64
-        height: 64
+        x: 3329
+        y: 1329
+        width: 572
+        height: 543
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 917790e3c3c1cec44a6190e0a0817ea0
-      internalID: -1788241657
+      spriteID: 1e0670ddc91f2814bba5ef99d4d37d14
+      internalID: 1716229251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_6
+      name: Environment Parts_7
       rect:
         serializedVersion: 2
-        x: 320
-        y: 146
-        width: 64
-        height: 64
+        x: 239
+        y: 1408
+        width: 353
+        height: 363
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a1b0e662e7010c48a6c94990e06102d
-      internalID: -908957570
+      spriteID: d30fb483362997241bd2016fed8aef70
+      internalID: -375622023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_7
+      name: Environment Parts_8
       rect:
         serializedVersion: 2
-        x: 448
-        y: 146
-        width: 64
-        height: 64
+        x: 788
+        y: 1469
+        width: 292
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fee74bf6c9b984fb6e6aefc924113b
-      internalID: -309637427
+      spriteID: 027bd3063d760d64889049359287012e
+      internalID: 689170938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_8
+      name: Environment Parts_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 146
-        width: 64
-        height: 64
+        x: 1269
+        y: 1469
+        width: 291
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe6813ae1c347ed41851b7a20f137b93
-      internalID: 1619483727
+      spriteID: 5d5bb219106cf5f46a74e0187600b285
+      internalID: -1323350951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_9
+      name: Environment Parts_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 82
-        width: 64
-        height: 64
+        x: 1749
+        y: 1459
+        width: 291
+        height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0740a3934bc370c41906b43863d42aa4
-      internalID: -782852137
+      spriteID: 986bfb33467032045b35e53e6fe41344
+      internalID: 943567166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_10
+      name: Environment Parts_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 82
-        width: 64
-        height: 64
+        x: 2168
+        y: 1449
+        width: 292
+        height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87880005c23a97443961aef6d8b7054d
-      internalID: -1843372090
+      spriteID: cf371020844ad394b9d021d4c668331b
+      internalID: -1456991601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_11
+      name: Environment Parts_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 82
-        width: 64
-        height: 64
+        x: 2530
+        y: 1439
+        width: 291
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af9ad37ef18ed241a2eea32ef75a492
-      internalID: 157981320
+      spriteID: cf491f55a81df1542a13c7f45ffca4fb
+      internalID: -1401423415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_12
+      name: Environment Parts_18
       rect:
         serializedVersion: 2
-        x: 320
-        y: 82
-        width: 64
-        height: 64
+        x: 2908
+        y: 1329
+        width: 233
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf7588f3331fac4ca37018a3c857196
-      internalID: -1660576433
+      spriteID: f5330fdd7d93a394ea85cd3d3649e23e
+      internalID: -159706319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_13
+      name: Environment Parts_19
       rect:
         serializedVersion: 2
-        x: 448
-        y: 82
-        width: 64
-        height: 64
+        x: 328
+        y: 1289
+        width: 124
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42696cb3d0ae2204db608243d298baee
-      internalID: -52388107
+      spriteID: 68a425e9fc56be2438cf8f38309db344
+      internalID: 324436917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_14
+      name: Environment Parts_26
       rect:
         serializedVersion: 2
-        x: 512
-        y: 82
-        width: 64
-        height: 64
+        x: 1439
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 466c1ea017ce3d24288ab381aafd1cc4
-      internalID: -1506363155
+      spriteID: 47ffa7c466d87be4289407b276377ae2
+      internalID: 753914207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_15
+      name: Environment Parts_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 18
-        width: 64
-        height: 64
+        x: 1739
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcf4e4a4e76e1ed4da99528c0fceb967
-      internalID: -375361474
+      spriteID: b409b8f70b0bee34ea4288454fe75f56
+      internalID: 24894285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_16
+      name: Environment Parts_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 18
-        width: 64
-        height: 64
+        x: 2059
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bbda86dbd282bf45bf4a209977a7eac
-      internalID: 1250570003
+      spriteID: 1ace81900762588409793145c5f90717
+      internalID: 358878921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_17
+      name: Environment Parts_29
       rect:
         serializedVersion: 2
-        x: 128
-        y: 18
-        width: 64
-        height: 64
+        x: 2369
+        y: 928
+        width: 202
+        height: 243
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4b6ffe3ce7281946ac8c3591aa4de47
-      internalID: -136236143
+      spriteID: b3c918ff317ee69468d8b21582dc6a90
+      internalID: 905742490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_18
+      name: Environment Parts_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 18
-        width: 64
-        height: 64
+        x: 2648
+        y: 969
+        width: 323
+        height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ace22158bd87840a48ec7cda21f5cb
-      internalID: -2050443508
+      spriteID: dd90e3c2ca1cd834e9a36dc7acc5a95b
+      internalID: -1675160695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_19
+      name: Environment Parts_31
       rect:
         serializedVersion: 2
-        x: 256
-        y: 18
-        width: 64
-        height: 64
+        x: 3088
+        y: 979
+        width: 324
+        height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a7974c718cc964b933ee93ee457d9b
-      internalID: -1970116357
+      spriteID: 7ec6b354ab3862e49b8d2ce87d59b3a8
+      internalID: -81447437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_20
+      name: Environment Parts_32
       rect:
         serializedVersion: 2
-        x: 320
-        y: 18
-        width: 64
-        height: 64
+        x: 229
+        y: 89
+        width: 282
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58dfd9ab8ce80df4ebae6bc8876e3b15
-      internalID: -1293940809
+      spriteID: 27c30df125f53a4439e3a70141509c02
+      internalID: -1062102085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_21
+      name: Environment Parts_33
       rect:
         serializedVersion: 2
-        x: 384
-        y: 18
-        width: 64
-        height: 64
+        x: 559
+        y: 89
+        width: 292
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537fe46a515304742ad1649380149f3a
-      internalID: -1578765834
+      spriteID: 21dbf8e81263fd243bc2c7abc0cf5533
+      internalID: 2005148736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_22
+      name: Environment Parts_34
       rect:
         serializedVersion: 2
-        x: 448
-        y: 18
-        width: 64
-        height: 64
+        x: 888
+        y: 89
+        width: 354
+        height: 813
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e981dd8472261d468f483307d358ec8
-      internalID: 1052109628
+      spriteID: cd28339253c6905439ffa5e79eb6dcb5
+      internalID: 2080695479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Broken_Pillars_23
+      name: Environment Parts_35
       rect:
         serializedVersion: 2
-        x: 512
-        y: 18
-        width: 64
-        height: 64
+        x: 2888
+        y: 679
+        width: 324
+        height: 292
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d324fec0638476147bafd714ea8e9016
-      internalID: -566681238
+      spriteID: 1b3a9f6d3128c8b4e9267fa62078160b
+      internalID: -924009366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_36
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 89
+        width: 263
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf92b4a4d8d8a9f4c8cb458b5bd1858e
+      internalID: 1785260923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_37
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 89
+        width: 263
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f970440f1d7fdf44ba236afbe9295cfd
+      internalID: -1808584413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_38
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 89
+        width: 264
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4db5e84c0761a42a03cc98a044ca27
+      internalID: 1814201318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_39
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 89
+        width: 262
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71c74fcacd364a4f811a96c1edaf114
+      internalID: -922679805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment Parts_40
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 89
+        width: 262
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a94fbfe222652479f9f2f4c3c42e06
+      internalID: -1119371203
       vertices: []
       indices: 
       edges: []
@@ -621,30 +726,47 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Broken_Pillars_0: -1289620025
-      Broken_Pillars_1: 1748166383
-      Broken_Pillars_10: -1843372090
-      Broken_Pillars_11: 157981320
-      Broken_Pillars_12: -1660576433
-      Broken_Pillars_13: -52388107
-      Broken_Pillars_14: -1506363155
-      Broken_Pillars_15: -375361474
-      Broken_Pillars_16: 1250570003
-      Broken_Pillars_17: -136236143
-      Broken_Pillars_18: -2050443508
-      Broken_Pillars_19: -1970116357
-      Broken_Pillars_2: 1209179434
-      Broken_Pillars_20: -1293940809
-      Broken_Pillars_21: -1578765834
-      Broken_Pillars_22: 1052109628
-      Broken_Pillars_23: -566681238
-      Broken_Pillars_3: 192801008
-      Broken_Pillars_4: -1590976662
-      Broken_Pillars_5: -1788241657
-      Broken_Pillars_6: -908957570
-      Broken_Pillars_7: -309637427
-      Broken_Pillars_8: 1619483727
-      Broken_Pillars_9: -782852137
+      Environment Parts_0: 634422113
+      Environment Parts_1: 1449345394
+      Environment Parts_10: -1323350951
+      Environment Parts_11: 519327091
+      Environment Parts_12: 943567166
+      Environment Parts_13: 1513136393
+      Environment Parts_14: -1456991601
+      Environment Parts_15: -2018477391
+      Environment Parts_16: -1401423415
+      Environment Parts_17: 1831886384
+      Environment Parts_18: -159706319
+      Environment Parts_19: 324436917
+      Environment Parts_2: -1423476111
+      Environment Parts_20: -891932909
+      Environment Parts_21: 693470843
+      Environment Parts_22: 1156683795
+      Environment Parts_23: -318590878
+      Environment Parts_24: -701526097
+      Environment Parts_25: -439688398
+      Environment Parts_26: 753914207
+      Environment Parts_27: 24894285
+      Environment Parts_28: 358878921
+      Environment Parts_29: 905742490
+      Environment Parts_3: -1909935365
+      Environment Parts_30: -1675160695
+      Environment Parts_31: -81447437
+      Environment Parts_32: -1062102085
+      Environment Parts_33: 2005148736
+      Environment Parts_34: 2080695479
+      Environment Parts_35: -924009366
+      Environment Parts_36: 1785260923
+      Environment Parts_37: -1808584413
+      Environment Parts_38: 1814201318
+      Environment Parts_39: -922679805
+      Environment Parts_4: -1772534191
+      Environment Parts_40: -1119371203
+      Environment Parts_5: 123915843
+      Environment Parts_6: 1716229251
+      Environment Parts_7: -375622023
+      Environment Parts_8: 689170938
+      Environment Parts_9: -52361377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,8 +6,17 @@ public class PillarBehavior : MonoBehaviour
     [SerializeField] int pillarID;
     [SerializeField] PillarManager pillarManager;
     [SerializeField] GameObject player;
+    [SerializeField] Animator anim;
     public bool pressed;
+    public bool isNotTriggered;
 
+    public void Update()
+    {
+        if(pressed)
+        {
+            anim.SetTrigger("Triggered");
+        }
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
@@ -25,6 +34,8 @@ public class PillarBehavior : MonoBehaviour
     {
         if (player == null) return;
         pressed = pillarManager.CheckContext(pillarID);
+        anim.SetBool("isNotTriggered",isNotTriggered);
+        isNotTriggered = false;
     }
     #endregion
 }

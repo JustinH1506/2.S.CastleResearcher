@@ -4,7 +4,9 @@ public class PillarManager : MonoBehaviour
 {
     [SerializeField] PillarBehavior[] pillarBehaviors;
     [SerializeField] GameObject first_door;
-    [SerializeField] Animator anim;
+    [SerializeField] Animator[] anim;
+    public bool isNotTriggerd;
+
     public bool CheckContext(int pillarID)
     {
         for (int i = 0; i < pillarID - 1; i++)
@@ -17,7 +19,7 @@ public class PillarManager : MonoBehaviour
         }
 
         if (pillarID == pillarBehaviors.Length) Success();
-        anim.SetTrigger("triggered");
+        
         return true;
     }
 
@@ -26,6 +28,8 @@ public class PillarManager : MonoBehaviour
         for (int i = 0; i < pillarBehaviors.Length; i++)
         {
             pillarBehaviors[i].pressed = false;
+            anim[i].SetBool("isNotTriggered", isNotTriggerd);
+            isNotTriggerd = true;
         }
     }
 
