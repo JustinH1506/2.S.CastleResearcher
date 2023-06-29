@@ -8,17 +8,22 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject[] itemObjects_InGame;
     [SerializeField] GameObject[] itemObjects_Inventar;
 
-    public bool CheckItems(int itemID)
+    public bool inRange;
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        for (int i = 0; i < itemID; i++)
+        if (collision.CompareTag("Player"))
         {
-            if (i != itemID)
-            {
-                return false;
-            }
+            inRange = true;
         }
-        gameObject.SetActive(false);
-        itemObjects_Inventar[itemID].SetActive(true);
-        return true;
+    }
+
+    public void CheckItem()
+    {
+        if(itemBehaviour.pressed == true)
+        {
+            itemObjects_InGame[itemBehaviour.itemID].SetActive(false);
+            itemObjects_Inventar[itemBehaviour.inventarID].SetActive(true);
+        }
     }
 }

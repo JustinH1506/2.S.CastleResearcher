@@ -7,7 +7,10 @@ public class ItemBehaviour : MonoBehaviour
 {
     [SerializeField] ItemManager itemManager;
     [SerializeField] GameObject player;
-    [SerializeField] int itemID;
+
+    public  int itemID;
+    public int inventarID;
+
     public bool pressed;
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +28,10 @@ public class ItemBehaviour : MonoBehaviour
     public void Interacted(InputAction.CallbackContext context)
     {
         if (player == null) return;
-        pressed = itemManager.CheckItems(itemID);
+
+        if(context.performed && itemManager.inRange == true)
+        {
+            pressed = true;
+        }
     }
 }

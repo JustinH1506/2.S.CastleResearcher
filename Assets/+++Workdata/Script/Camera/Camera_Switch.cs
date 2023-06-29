@@ -11,7 +11,7 @@ public class Camera_Switch : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            vcam.m_Priority = +2;
+            vcam.m_Priority += 2;
         }
     }
 }

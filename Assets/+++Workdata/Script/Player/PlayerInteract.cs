@@ -68,16 +68,17 @@ public class PlayerInteract : MonoBehaviour
 
     public GameObject hint_1;
 
-
-    #endregion
-
-    #region Serialized field
-    [SerializeField] CinemachineVirtualCamera vcam01;
-
-    [SerializeField] CinemachineVirtualCamera vcam02;
+    public GameObject blockade;
     #endregion
 
     #region Updates
+    private void Update()
+    {
+        if(ribbon_Statue.activeInHierarchy && handcuff_Statue.activeInHierarchy && protein_Statue.activeInHierarchy)
+        {
+            blockade.SetActive(false);
+        }
+    }
     #endregion
 
     #region OntriggerEnter&OnTriggerExit
@@ -86,23 +87,6 @@ public class PlayerInteract : MonoBehaviour
         if (collision.gameObject.CompareTag("Scene_Switch"))
         {
             SceneManager.LoadScene(1);
-        }
-
-        if (collision.CompareTag("CameraSwitch"))
-        {
-            vcam01.m_Priority = 16;
-        }
-        else if (collision.gameObject.CompareTag("Camera_Switch_Library"))
-        {
-            vcam02.m_Priority = 20;
-        }
-        else if (collision.CompareTag("Camera_Switch_back_to_Pillar"))
-        {
-            vcam02.m_Priority = 14;
-        }
-        else if (collision.CompareTag("Camera_Switch_before_room"))
-        {
-            vcam01.m_Priority = 10;
         }
 
         if (collision.CompareTag("Book"))

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,12 @@ public class Code_Script : MonoBehaviour
     public Animator anim;
 
     public GameObject buttons;
+
+    public TextMeshProUGUI number_1;
+
+    public TextMeshProUGUI number_2;
+
+    public TextMeshProUGUI number_3;
 
     public int code_1;
 
@@ -37,14 +44,18 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 1;
+
+            number_1.text = "1";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 1;
+            number_2.text = "1";
         }
         else
         {
             code_3 = 1;
+            number_3.text = "1";
         }
     }
 
@@ -53,14 +64,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 2;
+            number_1.text = "2";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 2;
+            number_2.text = "2";
         }
         else
         {
             code_3 = 2;
+            number_3.text = "2";
         }
     }
 
@@ -69,14 +83,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 3;
+            number_1.text = "3";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 3;
+            number_2.text = "3";
         }
         else
         {
             code_3 = 3;
+            number_3.text = "3";
         }
     }
 
@@ -85,14 +102,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 4;
+            number_1.text = "4";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 4;
+            number_2.text = "4";
         }
         else
         {
             code_3 = 4;
+            number_3.text = "4";
         }
     }
 
@@ -101,14 +121,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 5;
+            number_1.text = "5";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 5;
+            number_2.text = "5";
         }
         else
         {
             code_3 = 5;
+            number_3.text = "5";
         }
     }
 
@@ -117,14 +140,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 6;
+            number_1.text = "6";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 6;
+            number_2.text = "6";
         }
         else
         {
             code_3 = 6;
+            number_3.text = "6";
         }
     }
 
@@ -133,14 +159,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 7;
+            number_1.text = "7";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 7;
+            number_2.text = "7";
         }
         else
         {
             code_3 = 7;
+            number_3.text = "7";
         }
     }
 
@@ -149,14 +178,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 8;
+            number_1.text = "8";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 8;
+            number_2.text = "8";
         }
         else
         {
             code_3 = 8;
+            number_3.text = "8";
         }
     }
 
@@ -165,14 +197,17 @@ public class Code_Script : MonoBehaviour
         if (code_1 == 0)
         {
             code_1 = 9;
+            number_1.text = "9";
         }
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 9;
+            number_2.text = "9";
         }
         else
         {
             code_3 = 9;
+            number_3.text = "9";
         }
     }
 
@@ -191,6 +226,12 @@ public class Code_Script : MonoBehaviour
             code_2 = 0;
 
             code_3 = 0;
+
+             number_1.text = "0";
+
+        number_2.text = "0";
+
+        number_3.text = "0";
         }
         else if (code_1 == 4 && code_1 != 0 && code_2 != 1 && code_2 != 0 && code_3 != 3 && code_3 != 0)
         {
@@ -199,6 +240,12 @@ public class Code_Script : MonoBehaviour
             code_2 = 0;
 
             code_3 = 0;
+
+            number_1.text = "0";
+
+            number_2.text = "0";
+
+            number_3.text = "0";
         }
         else if (code_1 == 4 && code_1 != 0  && code_2 == 1 && code_2 != 0  && code_3 != 3 && code_3 != 0)
         {
@@ -207,6 +254,12 @@ public class Code_Script : MonoBehaviour
             code_2 = 0;
 
             code_3 = 0;
+
+            number_1.text = "0";
+
+            number_2.text = "0";
+
+            number_3.text = "0";
         }
         else if (code_1 != 4 && code_1 != 0 && code_2 != 1 && code_2 != 0 && code_3 == 3 && code_3 != 0)
         {
@@ -215,7 +268,15 @@ public class Code_Script : MonoBehaviour
             code_2 = 0;
 
             code_3 = 0;
+
+            number_1.text = "0";
+
+            number_2.text = "0";
+
+            number_3.text = "0";
         }
+
+       
     }
 
     public void Interact(InputAction.CallbackContext context)
