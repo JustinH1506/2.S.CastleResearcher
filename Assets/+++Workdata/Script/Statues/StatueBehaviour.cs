@@ -1,18 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class StatueBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] Inventar_Items inventarItems;
+    [SerializeField] ItemManager itemManager; 
+
+    public GameObject player;
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (!collision.CompareTag("Player")) return;
+        player = collision.gameObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (!collision.CompareTag("Player")) return;
+        player = null;
+    }
+
+    public void Interacted(InputAction.CallbackContext context)
+    {
+        if (player == null) return;
+
+        if(context.performed && player != null && itemManager.isActive == true)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

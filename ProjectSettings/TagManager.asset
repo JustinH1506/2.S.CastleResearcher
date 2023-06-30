@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bridge_breaker
   - Scene_Switch
   - CameraSwitch
   - Book
@@ -24,7 +23,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - First_room
   - Water
   - UI
   - Ground

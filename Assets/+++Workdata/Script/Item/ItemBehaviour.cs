@@ -5,11 +5,9 @@ using UnityEngine.InputSystem;
 
 public class ItemBehaviour : MonoBehaviour
 {
+    [SerializeField] Inventar_Items inventarItems;
     [SerializeField] ItemManager itemManager;
-    [SerializeField] GameObject player;
-
-    public  int itemID;
-    public int inventarID;
+    public GameObject player;
 
     public bool pressed;
 
@@ -29,9 +27,12 @@ public class ItemBehaviour : MonoBehaviour
     {
         if (player == null) return;
 
-        if(context.performed && itemManager.inRange == true)
+        if (context.performed && player != null && itemManager.isActive == false)
         {
-            pressed = true;
+            gameObject.SetActive(false);
+
+            inventarItems.CheckInventar();
+            itemManager.isActive = true;
         }
     }
 }

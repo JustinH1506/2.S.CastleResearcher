@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask WhatIsGround;
 
+    public LayerMask WhatIsGround2;
+
+    public LayerMask WhatIsGround3;
+
     #endregion
     #region Variables
     public float moveSpeed, jumpForce;
@@ -22,6 +26,11 @@ public class PlayerMovement : MonoBehaviour
     private float inputX;
 
     public bool isWalking;
+
+    #region Arrays
+
+
+    #endregion
 
     [SerializeField] bool isGrounded;
     #endregion
@@ -61,15 +70,6 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         inputX = context.ReadValue<Vector2>().x;
-    }
-
-    public void Jump(InputAction.CallbackContext context)
-    {
-        if (context.performed && isGrounded)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            Debug.Log("Working");
-        }
     }
     #endregion
 }

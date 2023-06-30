@@ -1,41 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Book_Puzzle : MonoBehaviour
 {
-    public GameObject book;
+    [SerializeField] PlayerInteract playerInteract;
 
-    public GameObject inventar_Book;
+    [SerializeField] ItemManager itemManager;
 
-    public GameObject bookshelf;
+    [SerializeField] GameObject bookShelf_Cutscene;
 
-    public bool isBook;
+    [SerializeField] GameObject door;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public GameObject player;
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isBook = true;
-        }
+        if (!collision.CompareTag("Player")) return;
+        player = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isBook = false;
-        }
+        if (!collision.CompareTag("Player")) return;
+        player = null;
     }
 
-    public void Interact(InputAction.CallbackContext context)
+    public void Interacted(InputAction.CallbackContext context)
     {
-            if(context.performed && isBook)
-        {
-            book.SetActive(false);
+        if (player == null) return;
 
-            inventar_Book.SetActive(true);
+        if(context.performed && player != null && itemManager.isActive == true)
+        {
+            gameObject.SetActive(false);
+
+            bookShelf_Cutscene.SetActive(true);
         }
     }
 }

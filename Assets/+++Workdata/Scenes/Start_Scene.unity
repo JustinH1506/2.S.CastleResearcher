@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 101259060}
   - component: {fileID: 101259059}
   m_Layer: 0
-  m_Name: Environment Parts_30 (1)
+  m_Name: Right Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 323837384}
   - component: {fileID: 323837383}
   m_Layer: 0
-  m_Name: Environment Parts_30
+  m_Name: ' Left Lamp'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,13 +817,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432464932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.0882, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -929, y: -757.9118, z: 0}
   m_LocalScale: {x: 1, y: 0.83926547, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1027413576}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &520003595
 GameObject:
@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 709703935}
   - component: {fileID: 709703934}
   m_Layer: 0
-  m_Name: Environment Parts_32
+  m_Name: Left Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 830585916}
   - component: {fileID: 830585915}
   m_Layer: 0
-  m_Name: Environment Parts_32 (1)
+  m_Name: Right Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1494,6 +1494,7 @@ Transform:
   - {fileID: 830585916}
   - {fileID: 101259060}
   - {fileID: 1572042780}
+  - {fileID: 432464934}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1668,13 +1669,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249643864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 653.7555, y: 322.97513, z: -9.8615265}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 234.11618, y: -68.036896, z: -2.5392227}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1842578588}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259229956
 GameObject:
@@ -1755,7 +1756,7 @@ GameObject:
   - component: {fileID: 1572042780}
   - component: {fileID: 1572042779}
   m_Layer: 0
-  m_Name: Background_Semesterprojekt
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1897,6 +1898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1259229959}
+  - {fileID: 1249643866}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

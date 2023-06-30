@@ -6,29 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInteract : MonoBehaviour
 {
+    #region Scripts
+    [SerializeField] PlayerDoor playerDoor;
+    #endregion
     #region Variables
     public int interact_count = 0;
 
-    public int book_count = 0;
-
     public int inventar_count;
+
+    public bool isUsable;
     #endregion
 
     #region GameObjetcs
 
-    public GameObject interact_button_text_for_room;
-
-    public GameObject interact_button_text_castle_room;
-
-    public GameObject book;
-
     public GameObject next_Scene_Door;
-
-    public GameObject inventar_Book;
-
-    public GameObject bookshelf_cutscene;
-
-    public GameObject empty_Bookshelf;
 
     public GameObject proteinpowder_Outside;
 
@@ -89,19 +80,9 @@ public class PlayerInteract : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        if (collision.CompareTag("Book"))
-        {
-            book_count = 1;
-        }
-
-        if (book.activeInHierarchy == false && collision.gameObject.CompareTag("Bookshelf"))
-        {
-            book_count = 2;
-        }
-
         if (collision.CompareTag("Door_1"))
         {
-            interact_count = 5;
+            isUsable = true;
         }
         else if (collision.CompareTag("Door_2"))
         {
@@ -142,21 +123,11 @@ public class PlayerInteract : MonoBehaviour
     {
         if (collision.CompareTag("Door_1"))
         {
-            interact_count = 0;
+            isUsable = false;
         }
         else if (collision.CompareTag("Door_2"))
         {
             interact_count = 0;
-        }
-
-        if (collision.CompareTag("Book"))
-        {
-            book_count = 0;
-        }
-
-        if (book.activeInHierarchy == false && collision.CompareTag("Bookshelf"))
-        {
-            book_count = 0;
         }
 
         if (collision.CompareTag("Proteinpowder"))
@@ -189,18 +160,6 @@ public class PlayerInteract : MonoBehaviour
     #region CallbackContext Methods
     public void Interact(InputAction.CallbackContext context)
     {
-
-        if (context.performed && book_count == 1 && inventar_count == 0)
-        {
-            book.SetActive(false);
-            inventar_Book.SetActive(true);
-            inventar_count = 1;
-        }
-
-        if (context.performed && book_count == 2)
-        {
-            StartCoroutine("Wait");
-        }
 
         if (context.performed && interact_count == 7 && inventar_count == 0)
         {
@@ -367,42 +326,10 @@ public class PlayerInteract : MonoBehaviour
 
     public void Door_Interact(InputAction.CallbackContext context)
     {
-        if (context.performed && interact_count == 5)
+        if (context.performed && isUsable == true)
         {
-            SceneManager.LoadScene(3);
+            playerDoor.CheckWaitTime();
         }
-        else if (context.performed && interact_count == 6)
-        {
-            SceneManager.LoadScene(2);
-        }
-    }
-    #endregion
-
-    #region IEnumerator
-    public IEnumerator Wait()
-    {
-        bookshelf_cutscene.SetActive(true);
-
-        inventar_Book.SetActive(false);
-
-        empty_Bookshelf.SetActive(false);
-
-        inventar_count = 0;
-
-        yield return new WaitForSeconds(3f);
-
-        next_Scene_Door.GetComponent<BoxCollider2D>().enabled = true;
-    }
-
-    public IEnumerator Hint()
-    {
-        yield return new WaitForSeconds(10);
-
-        hint_1.SetActive(true);
-
-        yield return new WaitForSeconds(10);
-
-        hint_1.SetActive(false);
     }
     #endregion
 }
