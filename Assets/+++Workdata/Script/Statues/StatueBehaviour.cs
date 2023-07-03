@@ -5,11 +5,35 @@ using UnityEngine.InputSystem;
 
 public class StatueBehaviour : MonoBehaviour
 {
+    [SerializeField] int succesID;
+    [SerializeField] StatueManager statueManager;
+    [SerializeField] Sprite[] statueStates;
+    PlayerControllerMap playerControllerMap;
+    [SerializeField] ItemSO itemSO;
+    [SerializeField] InevntoryManager inevntoryManager;
+    SpriteRenderer sr;
+    GameObject player;
 
-    [SerializeField] Inventar_Items inventarItems;
-    [SerializeField] ItemManager itemManager; 
+    private void Awake()
+    {
+        playerControllerMap = new PlayerControllerMap();
 
-    public GameObject player;
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    private void OnEnable()
+    {
+        playerControllerMap.Enable();
+
+        playerControllerMap.Player.Interact.performed += Interacted;
+    }
+
+    private void OnDisable()
+    {
+        playerControllerMap.Disable();
+
+        playerControllerMap.Player.Interact.performed -= Interacted;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,9 +51,72 @@ public class StatueBehaviour : MonoBehaviour
     {
         if (player == null) return;
 
-        if(context.performed && player != null && itemManager.isActive == true)
-        {
-            gameObject.SetActive(false);
-        }
+        if (itemSO == null && inevntoryManager.itemSO == null) return;
+
+        if (SwitchItem()) return;
+
+        if (GiveItem()) return;
+
+        if (AddItem()) return;
+
+        UpdateSprite();
+    }
+
+    private bool GiveItem()
+    {
+        if (itemSO == null && inevntoryManager.itemSO != null) return false;
+
+        inevntoryManager.UpdateItem(itemSO);
+        itemSO = null;
+
+        UpdateSprite();
+
+        return true;
+    }
+
+    private void UpdateSprite()
+    {
+        if (itemSO != null)
+            sr.sprite = statueStates[itemSO.itemID];
+        else sr.sprite = statueStates[0];
+    }
+
+    private bool AddItem()
+    {
+        if (inevntoryManager.itemSO == null) return false;
+
+        itemSO = inevntoryManager.itemSO;
+
+        inevntoryManager.UpdateItem(null);
+
+        UpdateSprite();
+        CheckID();
+
+        return true;
+    }
+
+    bool SwitchItem()
+    {
+        if (inevntoryManager.itemSO == null) return false;
+
+        if (itemSO == null) return false;
+
+        ItemSO itemSOSave = inevntoryManager.itemSO;
+
+        inevntoryManager.UpdateItem(null);
+        inevntoryManager.UpdateItem(itemSO);
+
+        itemSO = itemSOSave;
+
+        UpdateSprite();
+        CheckID();
+
+        return true;
+    }
+
+    void CheckID()
+    {
+        bool succes = succesID == itemSO.itemID ? true : false; 
+        statueManager.CheckSucces(succesID, succes);
     }
 }

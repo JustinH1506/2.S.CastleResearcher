@@ -4,11 +4,34 @@ using UnityEngine.InputSystem;
 public class PillarBehavior : MonoBehaviour
 {
     [SerializeField] int pillarID;
+
+    [SerializeField] PlayerControllerMap playerControllerMap;
     [SerializeField] PillarManager pillarManager;
     [SerializeField] GameObject player;
     [SerializeField] Animator anim;
     public bool pressed;
     public bool isNotTriggered;
+
+    private void Awake()
+    {
+        playerControllerMap = new PlayerControllerMap();
+    }
+
+    private void OnEnable()
+    {
+        playerControllerMap.Enable();
+
+        playerControllerMap.Player.Interact.performed += Interacted;
+        playerControllerMap.Player.Interact.canceled += Interacted;
+    }
+
+    private void OnDisable()
+    {
+        playerControllerMap.Disable();
+
+        playerControllerMap.Player.Interact.performed -= Interacted;
+        playerControllerMap.Player.Interact.canceled -= Interacted;
+    }
 
     public void Update()
     {

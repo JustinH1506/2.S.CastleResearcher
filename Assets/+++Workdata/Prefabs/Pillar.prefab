@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 556186696055383609}
   - component: {fileID: 3836791922973600370}
   - component: {fileID: 6156990486185447903}
-  - component: {fileID: 4773547089236699430}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -119,7 +118,7 @@ Transform:
   - {fileID: 1779170029915433285}
   - {fileID: 5064801218334354312}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &556186696055383609
 SpriteRenderer:
@@ -190,6 +189,7 @@ MonoBehaviour:
   player: {fileID: 0}
   anim: {fileID: 0}
   pressed: 0
+  isNotTriggered: 0
 --- !u!61 &6156990486185447903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,104 +235,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1.68}
   m_EdgeRadius: 0
---- !u!114 &4773547089236699430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4859320814504945797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 6ee257fc3fff19443a8de4dcf259fca0, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 42f5034d-bd10-46c4-bec2-078261ad87e0
-    m_ActionName: Player/Move[/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: fbb12a79-6f44-4ee4-a797-abd1d865de38
-    m_ActionName: Player/Jump[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3836791922973600370}
-        m_TargetAssemblyTypeName: PillarBehavior, Assembly-CSharp
-        m_MethodName: Interacted
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 15e0cc95-b2e9-442c-8ef4-4dc240a117a4
-    m_ActionName: Player/Interact[/Keyboard/e]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e7739111-797b-44db-bbc3-b1ada25c432d
-    m_ActionName: Player/Door_Interact[/Keyboard/w]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0f1ee786-2d47-4113-9738-4dd71988cce4
-    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 87d12f2e-39c2-42ce-9cad-b2cef7efbe39
-    m_ActionName: UI/Submit[/Keyboard/enter]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ce17b244-5fd6-40dd-9d95-09b84821106b
-    m_ActionName: UI/Cancel[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a96a3e5b-20dd-4ed8-9fb1-2879a3eddabc
-    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: edacdcd0-81f8-4239-971a-6d944d8bb5e1
-    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 760f414a-074f-4f48-9693-9622cf559769
-    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9c284c6b-c59c-4177-8f62-75e27d8b8554
-    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 8bcd938e-5383-4854-bdb2-fde22940b819
-    m_ActionName: UI/RightClick[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 8ee53a0f-3331-4d33-801f-69b18731eb6f
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b85f97f8-74c8-45ab-ae49-4d34f617fd72
-    m_ActionName: UI/TrackedDeviceOrientation
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &6123830890201007988
 GameObject:
   m_ObjectHideFlags: 0

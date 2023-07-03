@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
 {
     private EventInstance musicEventInstance;
 
+    private EventInstance ambienceEventInstance;
+
     public static AudioManager instance { get; private set; }    
 
     /// <summary>
@@ -29,6 +31,14 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeMusic(FMODEvents.instance.music);
+
+        InitializedAmbience(FMODEvents.instance.ambience);
+    }
+
+    private void InitializedAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateInstance(ambienceEventReference);
+        ambienceEventInstance.start();
     }
 
     /// <summary>

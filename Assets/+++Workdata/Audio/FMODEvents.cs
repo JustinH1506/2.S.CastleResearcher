@@ -5,6 +5,7 @@ using FMODUnity;
 
 public class FMODEvents : MonoBehaviour
 {
+    [field: SerializeField] public EventReference ambience { get; private set; }
     [field: SerializeField] public EventReference music { get; private set; }
 
     public static FMODEvents instance { get; private set; }

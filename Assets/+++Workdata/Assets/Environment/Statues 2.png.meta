@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: 77efa7a8bab93c04c9f1881ea03acf67
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Statues 2_0
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 988
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -219, y: -190}
+        - {x: -219, y: 218}
+        - {x: 181, y: 218}
+        - {x: 181, y: -190}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a14696a8b22aa24f80797cd4c49deb3
+      internalID: -862639275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_1
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 988
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -169, y: -225}
+        - {x: -169, y: 210}
+        - {x: 191, y: 210}
+        - {x: 191, y: -225}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7d6e0f02ebd1e47b62dfda1662c32b
+      internalID: -737827116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_2
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 988
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -196, y: -209}
+        - {x: -196, y: 201}
+        - {x: 203, y: 201}
+        - {x: 203, y: -209}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714a9c674a4fe9e4ab73bc85bafddc17
+      internalID: -1867536242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_3
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 988
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -252, y: -226}
+        - {x: -252, y: 181}
+        - {x: 187, y: 181}
+        - {x: 187, y: -226}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971581a6f9a488e46a1fbd7cd76a00dc
+      internalID: 1431906873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_4
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 984
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -165, y: -209}
+        - {x: -165, y: 217}
+        - {x: 190, y: 217}
+        - {x: 190, y: -209}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b48693664007149923ac94802be5be
+      internalID: -1664425663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 456
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -186, y: -214}
+        - {x: -186, y: 211}
+        - {x: 202, y: 211}
+        - {x: 202, y: -214}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6293e970f3a1ae24f9438229bd969ed2
+      internalID: -430231743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 458
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -196, y: -215}
+        - {x: -196, y: 208}
+        - {x: 168, y: 208}
+        - {x: 168, y: -215}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd77babc04e8e4241b551822c9ff1d08
+      internalID: -359957899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_7
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 496
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -192, y: -200}
+        - {x: -192, y: 215}
+        - {x: 201, y: 215}
+        - {x: 201, y: -200}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9076fe89bea3384a81dc3948b8edb8c
+      internalID: 469749927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 40
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -209, y: -229}
+        - {x: -209, y: 208}
+        - {x: 187, y: 208}
+        - {x: 187, y: -229}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843357bd876d8464eb87a9d401ba604a
+      internalID: 531808838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_9
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 31
+        width: 511
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -199.5, y: -233.5}
+        - {x: -199.5, y: 226.5}
+        - {x: 198.5, y: 226.5}
+        - {x: 198.5, y: -233.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8dffcc50ae2a341b268d6d3a8ee91f
+      internalID: -1573193869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_10
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 40
+        width: 511
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -214.5, y: -243}
+        - {x: -214.5, y: 215}
+        - {x: 168.5, y: 215}
+        - {x: 168.5, y: -243}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909f2b67a641cad4796f6d4eb6bda068
+      internalID: 223226719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 2_11
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 5
+        width: 511
+        height: 511
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -154.5, y: -227.5}
+        - {x: -154.5, y: 224.5}
+        - {x: 172.5, y: 224.5}
+        - {x: 172.5, y: -227.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2c23319af7d2244b9fa183df9613c3
+      internalID: -327795798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Statues 2_0: -862639275
+      Statues 2_1: -737827116
+      Statues 2_10: 223226719
+      Statues 2_11: -327795798
+      Statues 2_2: -1867536242
+      Statues 2_3: 1431906873
+      Statues 2_4: -1664425663
+      Statues 2_5: -430231743
+      Statues 2_6: -359957899
+      Statues 2_7: 469749927
+      Statues 2_8: 531808838
+      Statues 2_9: -1573193869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

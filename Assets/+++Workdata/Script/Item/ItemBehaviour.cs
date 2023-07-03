@@ -5,11 +5,30 @@ using UnityEngine.InputSystem;
 
 public class ItemBehaviour : MonoBehaviour
 {
-    [SerializeField] Inventar_Items inventarItems;
-    [SerializeField] ItemManager itemManager;
-    public GameObject player;
+    PlayerControllerMap playerControllerMap;
+    [SerializeField] ItemSO itemSO;
+    [SerializeField] InevntoryManager inevntoryManager;
+    GameObject player;
 
-    public bool pressed;
+    private void Awake()
+    {
+        playerControllerMap = new PlayerControllerMap();
+
+    }
+
+    private void OnEnable()
+    {
+        playerControllerMap.Enable();
+
+        playerControllerMap.Player.Interact.performed += Interacted;
+    }
+
+    private void OnDisable()
+    {
+        playerControllerMap.Disable();
+
+        playerControllerMap.Player.Interact.performed -= Interacted;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,12 +46,7 @@ public class ItemBehaviour : MonoBehaviour
     {
         if (player == null) return;
 
-        if (context.performed && player != null && itemManager.isActive == false)
-        {
-            gameObject.SetActive(false);
-
-            inventarItems.CheckInventar();
-            itemManager.isActive = true;
-        }
+        if(inevntoryManager.UpdateItem(itemSO))
+        gameObject.SetActive(false);
     }
 }

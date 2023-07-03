@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 1c6c35aa4afccbc47a3184f877fce050
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Statues 1_26
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 641
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf489a7b5f6251b48a16a0aafbd1e2ca
+      internalID: -1928974755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 1_27
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 630
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eeae188dabf4d848af2e8c47ba24c22
+      internalID: -497104843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Statues 1_28
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 659
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b8891c441b6d446b479d4cc2fee5d0
+      internalID: -828248712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Statues 1_0: -1786369111
+      Statues 1_1: 505555717
+      Statues 1_10: 1022639808
+      Statues 1_11: 650707162
+      Statues 1_12: -1157925129
+      Statues 1_13: -978439562
+      Statues 1_14: -70177912
+      Statues 1_15: 1688978195
+      Statues 1_16: 383917307
+      Statues 1_17: -1226747662
+      Statues 1_18: -412511338
+      Statues 1_19: -1396139607
+      Statues 1_2: -1622432978
+      Statues 1_20: 745026620
+      Statues 1_21: 1875649292
+      Statues 1_22: 74277431
+      Statues 1_23: -1024950240
+      Statues 1_24: 140700988
+      Statues 1_25: 1446525140
+      Statues 1_26: -1928974755
+      Statues 1_27: -497104843
+      Statues 1_28: -828248712
+      Statues 1_29: -1280303604
+      Statues 1_3: 1646451798
+      Statues 1_30: -1219736861
+      Statues 1_31: 1038477446
+      Statues 1_32: -1933351507
+      Statues 1_33: -519008971
+      Statues 1_34: 321449390
+      Statues 1_35: 2009693029
+      Statues 1_36: 936375957
+      Statues 1_37: -541772092
+      Statues 1_38: 690005970
+      Statues 1_39: -1688984875
+      Statues 1_4: 587683419
+      Statues 1_40: -216629458
+      Statues 1_41: -1219037788
+      Statues 1_42: -1849439860
+      Statues 1_43: -1609413094
+      Statues 1_44: -566218595
+      Statues 1_45: -345716020
+      Statues 1_46: 401549502
+      Statues 1_47: -1275462059
+      Statues 1_5: 713212777
+      Statues 1_6: -1648721687
+      Statues 1_7: -603499523
+      Statues 1_8: 2143147040
+      Statues 1_9: -1870521680
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

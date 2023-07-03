@@ -5,25 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Scene_Switch
-  - CameraSwitch
-  - Book
-  - Bookshelf
-  - Camera_Switch_Library
-  - Camera_Switch_before_room
-  - Camera_Switch_back_to_Pillar
   - Door_1
   - Door_2
-  - Proteinpowder
-  - Proteinpowder_Statue
-  - Handcuff_Statue
-  - Ribbon_Statue
-  - Ribbon
-  - Handcuffs
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - First_room
+  - 
   - Water
   - UI
   - Ground

@@ -13,11 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
 
+    PlayerControllerMap playerControllerMap;
+    private InputAction moveAction;
+
     public LayerMask WhatIsGround;
-
-    public LayerMask WhatIsGround2;
-
-    public LayerMask WhatIsGround3;
 
     #endregion
     #region Variables
@@ -34,12 +33,35 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] bool isGrounded;
     #endregion
-    private void Awake()
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
+
+    private void Awake()
+    {
+        playerControllerMap = new PlayerControllerMap();
+    }
+
+    private void OnEnable()
+    {
+        playerControllerMap.Enable();
+
+        playerControllerMap.Player.Move.performed += Move;
+        playerControllerMap.Player.Move.canceled += Move;
+    }
+
+    private void OnDisable()
+    {
+        playerControllerMap.Disable();
+
+        playerControllerMap.Player.Move.performed -= Move;
+        playerControllerMap.Player.Move.canceled -= Move;
+    }
+
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundPoint.position, .2f, WhatIsGround);
