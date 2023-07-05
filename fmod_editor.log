@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001F506BEB038 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000266503527B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,129 +18,6 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] SystemI::createSound                     : filename = ../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F4FF688248, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F4FF688248
-[LOG] SystemI::createSoundInternal             :     Create name='../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 147200
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F506A26950
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='audio-system-fmod-project_Assets_Ambience_amb_forest_wind', format=5, channels=2, frequency=48000, lengthbytes=146944, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.818329.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F4FF688248
-[LOG] SoundI::release                          : audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F506D04108)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F3A7705428)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF688AB8)
-[LOG] SystemI::createSound                     : filename = ../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Level 1.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F3B608AE28, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F3B608AE28
-[LOG] SystemI::createSoundInternal             :     Create name='../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Level 1.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4686240
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F3A75AF590
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='dark-ambient-126122', format=5, channels=2, frequency=48000, lengthbytes=4682496, lengthpcm=21784868, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.906158.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F3B608AE28
-[LOG] SystemI::createSound                     : filename = ../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F4FF6883F8, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F4FF6883F8
-[LOG] SystemI::createSoundInternal             :     Create name='../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 147200
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F506A26590
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='audio-system-fmod-project_Assets_Ambience_amb_forest_wind', format=5, channels=2, frequency=48000, lengthbytes=146944, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.818329.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F4FF6883F8
-[LOG] SoundI::release                          : audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F506D03388)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF1992F8)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F50D0F4228)
-[LOG] SystemI::createSound                     : filename = ../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Level 1.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F3B608A258, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F3B608A258
-[LOG] SystemI::createSoundInternal             :     Create name='../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Level 1.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4686240
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F3A75AFBD0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='dark-ambient-126122', format=5, channels=2, frequency=48000, lengthbytes=4682496, lengthpcm=21784868, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.906158.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F3B608A258
-[LOG] SoundI::release                          : dark-ambient-126122 (000001F3B608AE28)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F4D3CCFE08)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F485F510A8)
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F501A07768, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F501A07768
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F501A07768
-[LOG] SystemI::createSound                     : filename = ../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F5069E11B8, queue head = 000001F3A49D4128, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F5069E11B8
-[LOG] SystemI::createSoundInternal             :     Create name='../../../Fmod/Workspace/Pii_Sounds/Build/Desktop/Cutscene.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 147200
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F506A3A4C0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='audio-system-fmod-project_Assets_Ambience_amb_forest_wind', format=5, channels=2, frequency=48000, lengthbytes=146944, lengthpcm=576000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.818329.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F5069E11B8
-[LOG] SoundI::release                          : audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF688248)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4D8A0EAF8)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F500B56358)
-[LOG] SoundI::release                          : dark-ambient-126122 (000001F3B608A258)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F4D4420078)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F501A07768)
-[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
-[LOG] SoundI::release                          : dark-ambient-126122 (000001F4D95E5C38)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F1C9C6C338)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F4D95E5A88)
-[LOG] SoundI::release                          : dark-ambient-126122 (000001F50DA95768)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F484711F18)
-[LOG] SoundI::release                          :     dark-ambient-126122 (000001F506D03A48)
-[LOG] SoundI::release                          : audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF6883F8)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF199638)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F50D0F4588)
-[LOG] SoundI::release                          : audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F5069E11B8)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F4FF1992F8)
-[LOG] SoundI::release                          :     audio-system-fmod-project_Assets_Ambience_amb_forest_wind (000001F50D0F4C48)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -148,5 +25,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
-using System.Dynamic;
 
 public class AudioManager : MonoBehaviour
 {
+    private List<EventInstance> eventInstances;
     private EventInstance musicEventInstance;
 
     private EventInstance ambienceEventInstance;
@@ -23,6 +23,22 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Found more than one AudioManager");
         }
         instance = this;
+
+        eventInstances = new List<EventInstance>();
+    }
+
+    public void PlayOneShot(EventReference sound, Vector3 worldPos)
+    {
+        RuntimeManager.PlayOneShot(sound, worldPos);    
+    }
+
+    public EventInstance CreateInstance(EventReference eventReference)
+    {
+        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+
+        eventInstances.Add(eventInstance);  
+
+        return eventInstance;
     }
 
     /// <summary>
@@ -41,6 +57,11 @@ public class AudioManager : MonoBehaviour
         ambienceEventInstance.start();
     }
 
+    public void SetAmbienceParameter(string parameterName, float parametereValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parametereValue);
+    }
+
     /// <summary>
     /// We call the CreateInstance Method to make our musicEventIntsance to this and start it at the start method.
     /// </summary>
@@ -51,15 +72,22 @@ public class AudioManager : MonoBehaviour
         musicEventInstance.start();
     }
 
-
-    /// <summary>
-    /// We make the CreateInstance Method.
-    /// </summary>
-    /// <param name="eventReference"></param>
-    /// <returns></returns>
-    private EventInstance CreateInstance(EventReference eventReference)
+    public void SetMusicParameter(string parameterName, float parametereValue)
     {
-        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
-        return eventInstance;
+        musicEventInstance.setParameterByName(parameterName, parametereValue);
+    }
+
+    private void CleanUp()
+    {
+        foreach(EventInstance eventInstance in eventInstances)
+        {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.release();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CleanUp();
     }
 }

@@ -18,7 +18,7 @@ public class PillarManager : MonoBehaviour
             }
         }
         if (pillarID == pillarBehaviors.Length) Success();
-        
+
         return true;
     }
 
@@ -27,10 +27,11 @@ public class PillarManager : MonoBehaviour
         for (int i = 0; i < pillarBehaviors.Length; i++)
         {
             pillarBehaviors[i].pressed = false;
+
             anim[i].SetBool("isNotTriggered", isNotTriggerd);
-            isNotTriggerd = true;
 
             lampAnim[i].SetBool("isNotTriggered", isNotTriggerd);
+
             isNotTriggerd = true;
         }
     }

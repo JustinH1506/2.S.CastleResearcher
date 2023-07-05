@@ -6,7 +6,14 @@ using FMODUnity;
 public class FMODEvents : MonoBehaviour
 {
     [field: SerializeField] public EventReference ambience { get; private set; }
+
     [field: SerializeField] public EventReference music { get; private set; }
+
+    [field: SerializeField] public EventReference lever { get; private set; }
+
+    [field: SerializeField] public EventReference stoneDoor { get; private set; }
+
+    [field: SerializeField] public EventReference footSteps { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 

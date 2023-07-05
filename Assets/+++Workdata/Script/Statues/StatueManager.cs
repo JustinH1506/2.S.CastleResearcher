@@ -5,6 +5,7 @@ using UnityEngine;
 public class StatueManager : MonoBehaviour
 {
     [SerializeField] bool[] statueSucces;
+    //[SerializeField] Animator[] anim;
     [SerializeField] GameObject blockade;
 
     public void CheckSucces(int ID, bool condition)

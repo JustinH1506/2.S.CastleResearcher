@@ -9,6 +9,8 @@ public class Button_Script : MonoBehaviour
 
     public GameObject buttons;
 
+    public GameObject audioOptions;
+
 
     public void GameStart()
     {
@@ -22,7 +24,9 @@ public class Button_Script : MonoBehaviour
 
     public void Options()
     {
+        audioOptions.SetActive(true);
 
+        buttons.SetActive(false);
     }
 
     public void Credits()
@@ -32,9 +36,16 @@ public class Button_Script : MonoBehaviour
         buttons.SetActive(false);
     }
 
-    public void BackToButtons()
+    public void BackFromCredits()
     {
         credits.SetActive(false);
+
+        buttons.SetActive(true);
+    }
+
+    public void BackFromAudio()
+    {
+        audioOptions.SetActive(false);
 
         buttons.SetActive(true);
     }

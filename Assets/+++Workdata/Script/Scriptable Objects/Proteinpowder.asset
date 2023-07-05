@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43242fe84447174abb844573714bf52, type: 3}
   m_Name: Proteinpowder
   m_EditorClassIdentifier: 
-  itemName: Proteinpowder
+  itemName: Ball
   itemSprite: {fileID: -1928974755, guid: 1c6c35aa4afccbc47a3184f877fce050, type: 3}
   itemID: 1

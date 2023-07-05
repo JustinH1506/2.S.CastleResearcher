@@ -9,6 +9,8 @@ public class Book : MonoBehaviour
 
     [SerializeField] GameObject inventarBook;
 
+    [SerializeField] GameObject eButton;
+
     [SerializeField] ItemManager itemManager;
 
     public GameObject player;
@@ -49,6 +51,8 @@ public class Book : MonoBehaviour
     {
         if (!collision.CompareTag("Player")) return;
         player = collision.gameObject;
+
+        if (player != null) eButton.SetActive(true);
     }
 
     /// <summary>
@@ -60,13 +64,15 @@ public class Book : MonoBehaviour
     {
         if (!collision.CompareTag("Player")) return;
         player = null;
+
+        if (player == null) eButton.SetActive(false);
     }
 
     public void Interacted(InputAction.CallbackContext context)
     {
         if (player == null) return;
-        
-        if(context.performed && player != null)
+
+        if (context.performed && player != null)
         {
             gameObject.SetActive(false);
 

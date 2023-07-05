@@ -61,10 +61,12 @@ public class PillarBehavior : MonoBehaviour
         if (player == null) return;
         pressed = pillarManager.CheckContext(pillarID);
 
+        if(context.performed) AudioManager.instance.PlayOneShot(FMODEvents.instance.lever, transform.position);
+
         anim.SetBool("isNotTriggered",isNotTriggered);
-        isNotTriggered = false;
 
         lampAnim.SetBool("isNotTriggered", isNotTriggered);
+
         isNotTriggered = false;
     }
     #endregion

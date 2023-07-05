@@ -6,6 +6,10 @@ using UnityEngine.InputSystem;
 
 public class Code_Script : MonoBehaviour
 {
+    PlayerControllerMap playerControllerMap;
+
+    [SerializeField] PlayerMovement playerMovement;
+
     public Animator anim;
 
     public GameObject buttons;
@@ -23,6 +27,25 @@ public class Code_Script : MonoBehaviour
     public int code_3;
 
     public bool player;
+
+    private void Awake()
+    {
+        playerControllerMap = new PlayerControllerMap();
+    }
+
+    private void OnEnable()
+    {
+        playerControllerMap.Enable();
+
+        playerControllerMap.Player.Interact.performed += Interact;
+    }
+
+    private void OnDisable()
+    {
+        playerControllerMap.Disable();
+
+        playerControllerMap.Player.Interact.performed -= Interact;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -217,6 +240,8 @@ public class Code_Script : MonoBehaviour
         {
             anim.SetTrigger("Triggered");
 
+            playerMovement.moveSpeed = 7;
+
             buttons.SetActive(false);
         }
         else if (code_1 != 4 && code_1 != 0 && code_2 != 1 && code_2 != 0 && code_3 != 3 && code_3 != 0)
@@ -284,6 +309,8 @@ public class Code_Script : MonoBehaviour
         if (context.performed && player == true)
         {
             buttons.SetActive(true);
+
+            playerMovement.moveSpeed = 0;
         }
     }
 }

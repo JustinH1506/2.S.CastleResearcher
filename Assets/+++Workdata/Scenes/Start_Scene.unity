@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 17561715}
   - component: {fileID: 17561714}
-  - component: {fileID: 17561713}
   - component: {fileID: 17561716}
+  - component: {fileID: 17561717}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -142,14 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &17561713
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17561712}
-  m_Enabled: 1
 --- !u!20 &17561714
 Camera:
   m_ObjectHideFlags: 0
@@ -259,6 +251,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &17561717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17561712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &101259058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1264,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1249643865}
         m_TargetAssemblyTypeName: Button_Script, Assembly-CSharp
-        m_MethodName: EndGame
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

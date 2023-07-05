@@ -12,6 +12,14 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] PlayerControllerMap playerControllerMap;
     #endregion
 
+    #region GameObjects
+
+    [SerializeField] GameObject tutorialButtons;
+
+    [SerializeField] GameObject wButton;
+
+    #endregion
+
     #region Variables
     public int interact_count = 0;
 
@@ -61,6 +69,7 @@ public class PlayerInteract : MonoBehaviour
 
         if (collision.CompareTag("Door_1"))
         {
+            wButton.SetActive(true);
             isUsable = true;
         }
         else if (collision.CompareTag("Door_2"))
@@ -73,6 +82,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (collision.CompareTag("Door_1"))
         {
+            wButton.SetActive(false);
             isUsable = false;
         }
         else if (collision.CompareTag("Door_2"))
@@ -95,5 +105,23 @@ public class PlayerInteract : MonoBehaviour
             playerDoor.CheckWaitTime();
         }
     }
+    #endregion
+
+    IEnumerator Wait()
+    {
+        tutorialButtons.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
+        tutorialButtons.SetActive(false);
+    }
+
+    #region Own Mehtods
+
+    public void Tutorial()
+    {
+        StartCoroutine("Wait");
+    }
+
     #endregion
 }

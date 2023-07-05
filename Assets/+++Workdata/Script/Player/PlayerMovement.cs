@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,11 +21,13 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
     #region Variables
-    public float moveSpeed, jumpForce;
+    public float moveSpeed;
 
     private float inputX;
 
     public bool isWalking;
+
+    private EventInstance footSteps;
 
     #region Arrays
 
@@ -39,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        footSteps = AudioManager.instance.CreateInstance(FMODEvents.instance.footSteps);
     }
 
     private void Awake()
@@ -87,6 +92,8 @@ public class PlayerMovement : MonoBehaviour
             isWalking = false;
             anim.SetBool("isWalking", isWalking);
         }
+
+        UpdateSound();
     }
     #region CallbackContext Methods
     public void Move(InputAction.CallbackContext context)
@@ -94,4 +101,21 @@ public class PlayerMovement : MonoBehaviour
         inputX = context.ReadValue<Vector2>().x;
     }
     #endregion
+
+    private void UpdateSound()
+    {
+        if (rb.velocity.x != 0)
+        {
+            PLAYBACK_STATE playBackState;
+            footSteps.getPlaybackState(out playBackState);
+            if (playBackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                footSteps.start();
+            }
+        }
+        else
+        {
+            footSteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 }

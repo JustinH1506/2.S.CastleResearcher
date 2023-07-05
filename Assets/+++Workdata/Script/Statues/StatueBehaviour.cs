@@ -5,14 +5,18 @@ using UnityEngine.InputSystem;
 
 public class StatueBehaviour : MonoBehaviour
 {
-    [SerializeField] int succesID;
     [SerializeField] StatueManager statueManager;
     [SerializeField] Sprite[] statueStates;
     PlayerControllerMap playerControllerMap;
     [SerializeField] ItemSO itemSO;
     [SerializeField] InevntoryManager inevntoryManager;
+    [SerializeField] Animator anim;
     SpriteRenderer sr;
     GameObject player;
+
+    [SerializeField] int succesID;
+    public bool isRight;
+
 
     private void Awake()
     {
@@ -116,7 +120,13 @@ public class StatueBehaviour : MonoBehaviour
 
     void CheckID()
     {
-        bool succes = succesID == itemSO.itemID ? true : false; 
+        bool succes = succesID == itemSO.itemID ? true : false;
+
+        anim.SetTrigger("isTriggered");
+
+       /* anim.SetBool("isRight", isRight);
+        isRight = true;*/
+
         statueManager.CheckSucces(succesID, succes);
     }
 }
