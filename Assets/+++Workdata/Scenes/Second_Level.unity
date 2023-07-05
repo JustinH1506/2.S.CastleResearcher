@@ -9536,8 +9536,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1298580528}
   m_HandleRect: {fileID: 1298580527}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -12544,8 +12544,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 2086421585}
   m_HandleRect: {fileID: 2086421584}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -13350,7 +13350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -14249,8 +14249,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1167862715}
   m_HandleRect: {fileID: 1167862714}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -21017,8 +21017,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1251955597}
   m_HandleRect: {fileID: 1251955596}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22916,8 +22916,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1999011402}
   m_HandleRect: {fileID: 1999011401}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -36731,8 +36731,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1839825654}
   m_HandleRect: {fileID: 1839825653}
-  m_Direction: 1
-  m_Value: 0
+  m_Direction: 0
+  m_Value: 1
   m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
