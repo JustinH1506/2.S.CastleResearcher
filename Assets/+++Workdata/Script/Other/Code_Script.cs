@@ -20,13 +20,13 @@ public class Code_Script : MonoBehaviour
 
     public TextMeshProUGUI number_3;
 
-    public int code_1;
+    private int code_1;
 
-    public int code_2;
+    private int code_2;
 
-    public int code_3;
+    private int code_3;
 
-    public bool player;
+    private bool player;
 
     private void Awake()
     {
@@ -73,11 +73,13 @@ public class Code_Script : MonoBehaviour
         else if (code_1 != 0 && code_2 == 0)
         {
             code_2 = 1;
+
             number_2.text = "1";
         }
         else
         {
             code_3 = 1;
+
             number_3.text = "1";
         }
     }

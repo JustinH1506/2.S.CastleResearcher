@@ -15,6 +15,10 @@ public class FMODEvents : MonoBehaviour
 
     [field: SerializeField] public EventReference footSteps { get; private set; }
 
+    [field: SerializeField] public EventReference winSound { get; private set; }
+
+    [field: SerializeField] public EventReference getItemSound { get; private set; }
+
     public static FMODEvents instance { get; private set; }
 
     /// <summary>

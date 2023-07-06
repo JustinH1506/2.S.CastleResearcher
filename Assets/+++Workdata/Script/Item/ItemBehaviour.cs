@@ -48,5 +48,6 @@ public class ItemBehaviour : MonoBehaviour
 
         if(inevntoryManager.UpdateItem(itemSO))
         gameObject.SetActive(false);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.getItemSound, transform.position);
     }
 }

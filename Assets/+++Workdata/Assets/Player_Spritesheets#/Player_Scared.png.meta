@@ -338,27 +338,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Scared_14
-      rect:
-        serializedVersion: 2
-        x: 2876
-        y: 4238
-        width: 20
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13d9955203fe15a45add9248e39c45bc
-      internalID: 836615138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Player_Scared_15
       rect:
         serializedVersion: 2

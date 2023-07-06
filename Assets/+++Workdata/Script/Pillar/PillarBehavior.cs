@@ -8,6 +8,7 @@ public class PillarBehavior : MonoBehaviour
     [SerializeField] PlayerControllerMap playerControllerMap;
     [SerializeField] PillarManager pillarManager;
     [SerializeField] GameObject player;
+    [SerializeField] GameObject eButton;
     [SerializeField] Animator anim;
     [SerializeField] Animator lampAnim;
     public bool pressed;
@@ -47,12 +48,14 @@ public class PillarBehavior : MonoBehaviour
     {
         if (!collision.CompareTag("Player")) return;
         player = collision.gameObject;
+        eButton.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
         player = null;
+        eButton.SetActive(false);
     }
 
     #region InteractInput

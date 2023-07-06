@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -968,7 +968,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.75
-        value: {x: -76.44, y: -13.349999, z: 0}
+        value: {x: -76.44, y: -13.44, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1042,8 +1042,8 @@ AnimationClip:
       value: {fileID: -1910212519, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
     - time: 4.8333335
       value: {fileID: 280786263, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
-    - time: 5.8333335
-      value: {fileID: -1910212519, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
+    - time: 5.5
+      value: {fileID: 572093379, guid: 4dc989e16e88db64a8725ac62bb94892, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -1098,13 +1098,13 @@ AnimationClip:
     - {fileID: 1305466552, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
     - {fileID: -1910212519, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
     - {fileID: 280786263, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
-    - {fileID: -1910212519, guid: 99c2bb82b0b101a48a41f9ed30bcd014, type: 3}
+    - {fileID: 572093379, guid: 4dc989e16e88db64a8725ac62bb94892, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5.866667
+    m_StopTime: 5.8333335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -1165,7 +1165,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.75
-        value: -13.349999
+        value: -13.44
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1244,7 +1244,7 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 5.866667
+  - time: 5.8333335
     functionName: Tutorial
     data: 
     objectReferenceParameter: {fileID: 0}

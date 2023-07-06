@@ -4,6 +4,7 @@ public class PillarManager : MonoBehaviour
 {
     [SerializeField] PillarBehavior[] pillarBehaviors;
     [SerializeField] GameObject first_door;
+    [SerializeField] GameObject winCutscene;
     [SerializeField] Animator[] anim, lampAnim;
     public bool isNotTriggerd;
 
@@ -39,5 +40,6 @@ public class PillarManager : MonoBehaviour
     private void Success()
     {
         first_door.SetActive(false);
+        winCutscene.SetActive(true);
     }
 }

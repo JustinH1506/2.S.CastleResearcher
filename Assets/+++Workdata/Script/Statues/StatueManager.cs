@@ -7,6 +7,7 @@ public class StatueManager : MonoBehaviour
     [SerializeField] bool[] statueSucces;
     //[SerializeField] Animator[] anim;
     [SerializeField] GameObject blockade;
+    [SerializeField] GameObject winLight;
 
     public void CheckSucces(int ID, bool condition)
     {
@@ -16,5 +17,6 @@ public class StatueManager : MonoBehaviour
             if (!statueSucces[i]) return;
         }
         blockade.SetActive(false);
+        winLight.SetActive(true);
     }
 }

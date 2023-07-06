@@ -83,6 +83,8 @@ public class Book_Puzzle : MonoBehaviour
             bookShelf_Cutscene.SetActive(true);
 
             inventarBook.SetActive(false);
+
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.getItemSound, transform.position);
         }
     }
 }

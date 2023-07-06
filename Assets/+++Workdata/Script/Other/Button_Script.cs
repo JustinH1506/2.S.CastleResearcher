@@ -11,6 +11,8 @@ public class Button_Script : MonoBehaviour
 
     public GameObject audioOptions;
 
+    public PlayerMovement playerMovement;
+
 
     public void GameStart()
     {
@@ -71,5 +73,7 @@ public class Button_Script : MonoBehaviour
     public void Back()
     {
         buttons.SetActive(false);
+
+        playerMovement.moveSpeed = 7;
     }
 }

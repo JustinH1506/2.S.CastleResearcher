@@ -78,6 +78,8 @@ public class Book : MonoBehaviour
 
             inventarBook.SetActive(true);
 
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.getItemSound, transform.position);
+
             itemManager.isActive = true;
         }
     }
