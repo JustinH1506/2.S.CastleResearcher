@@ -28,11 +28,22 @@ public class AudioManager : MonoBehaviour
         eventInstances = new List<EventInstance>();
     }
 
+    /// <summary>
+    /// Playy the PlayOneShot sound.
+    /// </summary>
+    /// <param name="sound"></param>
+    /// <param name="worldPos"></param>
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);    
     }
 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="eventReference"></param>
+    /// <returns></returns>
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
@@ -43,24 +54,26 @@ public class AudioManager : MonoBehaviour
     }
 
     /// <summary>
-    /// We call the InitializeMusic method.
+    /// Start the Music, startMusic and Ambienece.
     /// </summary>
     private void Start()
     {
         InitializeMusic(FMODEvents.instance.music);
 
+        InitializeMusic(FMODEvents.instance.startMusic);
+
         InitializedAmbience(FMODEvents.instance.ambience);
     }
 
+    /// <summary>
+    /// Starting the ambience sound.
+    /// </summary>
+    /// <param name="ambienceEventReference"></param>
     private void InitializedAmbience(EventReference ambienceEventReference)
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
-        ambienceEventInstance.start();
-    }
 
-    public void SetAmbienceParameter(string parameterName, float parametereValue)
-    {
-        ambienceEventInstance.setParameterByName(parameterName, parametereValue);
+        ambienceEventInstance.start();
     }
 
     /// <summary>
@@ -73,11 +86,9 @@ public class AudioManager : MonoBehaviour
         musicEventInstance.start();
     }
 
-    public void SetMusicParameter(string parameterName, float parametereValue)
-    {
-        musicEventInstance.setParameterByName(parameterName, parametereValue);
-    }
-
+    /// <summary>
+    /// Stoping the sounds when entering other scenes.
+    /// </summary>
     private void CleanUp()
     {
         foreach(EventInstance eventInstance in eventInstances)
@@ -87,6 +98,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Calling CleanUp method.
+    /// </summary>
     private void OnDestroy()
     {
         CleanUp();

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PillarManager : MonoBehaviour
@@ -8,6 +9,13 @@ public class PillarManager : MonoBehaviour
     [SerializeField] Animator[] anim, lampAnim;
     public bool isNotTriggerd;
 
+    /// <summary>
+    /// If the Array in pillarBeahviour thats pressed is not equal to i Starts ResetPillar method and returns false,
+    /// 
+    /// IF the pillarID is equal to the length of the pillarBehaviour array Succes method gets called and returns true.
+    /// </summary>
+    /// <param name="pillarID"></param>
+    /// <returns></returns>
     public bool CheckContext(int pillarID)
     {
         for (int i = 0; i < pillarID - 1; i++)
@@ -23,6 +31,9 @@ public class PillarManager : MonoBehaviour
         return true;
     }
 
+    /// <summary>
+    /// pillarBehaviours pressed set to false, lever and lamp Bool is set and set to false.
+    /// </summary>
     private void ResetPillars()
     {
         for (int i = 0; i < pillarBehaviors.Length; i++)
@@ -37,6 +48,9 @@ public class PillarManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// firstDoor gets deactivated, winCutscene gets activated. 
+    /// </summary>
     private void Success()
     {
         first_door.SetActive(false);

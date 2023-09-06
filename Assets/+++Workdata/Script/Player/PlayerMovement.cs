@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
 
     PlayerControllerMap playerControllerMap;
+
     private InputAction moveAction;
 
     public LayerMask WhatIsGround;
@@ -29,14 +30,12 @@ public class PlayerMovement : MonoBehaviour
 
     private EventInstance footSteps;
 
-    #region Arrays
-
-
-    #endregion
-
     [SerializeField] bool isGrounded;
     #endregion
 
+    /// <summary>
+    /// Gets RigidBody2D, SpriteRenderer and Animator, sets footsepSounds.
+    /// </summary>
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -46,11 +45,17 @@ public class PlayerMovement : MonoBehaviour
         footSteps = AudioManager.instance.CreateInstance(FMODEvents.instance.footSteps);
     }
 
+    /// <summary>
+    /// We make our playerControllerMap our new PlayerControllerMap
+    /// </summary>
     private void Awake()
     {
         playerControllerMap = new PlayerControllerMap();
     }
 
+    /// <summary>
+    /// We enable the playerControllerMap and perform the Door interact Method.
+    /// </summary>
     private void OnEnable()
     {
         playerControllerMap.Enable();
@@ -59,6 +64,9 @@ public class PlayerMovement : MonoBehaviour
         playerControllerMap.Player.Move.canceled += Move;
     }
 
+    /// <summary>
+    /// We disable the playerControllerMap and 
+    /// </summary>
     private void OnDisable()
     {
         playerControllerMap.Disable();
@@ -67,9 +75,11 @@ public class PlayerMovement : MonoBehaviour
         playerControllerMap.Player.Move.canceled -= Move;
     }
 
+    /// <summary>
+    /// Makes it possible tu walk, set the walk animation on true and off and calls UodateSound method.
+    /// </summary>
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundPoint.position, .2f, WhatIsGround);
 
         rb.velocity = new Vector2(inputX * moveSpeed, rb.velocity.y);
 
@@ -96,12 +106,20 @@ public class PlayerMovement : MonoBehaviour
         UpdateSound();
     }
     #region CallbackContext Methods
+
+    /// <summary>
+    /// Gets the inputX value for walking.
+    /// </summary>
+    /// <param name="context"></param>
     public void Move(InputAction.CallbackContext context)
     {
         inputX = context.ReadValue<Vector2>().x;
     }
     #endregion
 
+    /// <summary>
+    /// Makes the footsteps get played while walking, if not walking footspes stop with fadeOut from the sound.
+    /// </summary>
     private void UpdateSound()
     {
         if (rb.velocity.x != 0)

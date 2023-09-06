@@ -11,6 +11,11 @@ public class Last_Door : MonoBehaviour
 
     public GameObject lastDoorCutscene;
 
+    public PlayerMovement playerMovement;
+
+    /// <summary>
+    /// playerControllerMap becomes PlayerControllerMap
+    /// </summary>
     private void Awake()
     {
         playerControllerMap = new PlayerControllerMap();
@@ -23,7 +28,7 @@ public class Last_Door : MonoBehaviour
     {
         playerControllerMap.Enable();
 
-        playerControllerMap.Player.Interact.performed += Interact;
+        playerControllerMap.Player.Door_Interact.performed += Interact;
     }
 
     /// <summary>
@@ -33,7 +38,7 @@ public class Last_Door : MonoBehaviour
     {
         playerControllerMap.Disable();
 
-        playerControllerMap.Player.Interact.performed -= Interact;
+        playerControllerMap.Player.Door_Interact.performed -= Interact;
     }
 
     /// <summary>
@@ -57,11 +62,17 @@ public class Last_Door : MonoBehaviour
         player = null;
     }
 
+    /// <summary>
+    /// Set the lastDoorCutscene active.
+    /// </summary>
+    /// <param name="context"></param>
     public void Interact(InputAction.CallbackContext context)
     {
         if(context.performed && player != null)
         {
             lastDoorCutscene.SetActive(true);
+
+            playerMovement.moveSpeed = 0;
         }
     }
 }

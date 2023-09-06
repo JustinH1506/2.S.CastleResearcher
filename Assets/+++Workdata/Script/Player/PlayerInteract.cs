@@ -60,6 +60,10 @@ public class PlayerInteract : MonoBehaviour
     #endregion
 
     #region OntriggerEnter&OnTriggerExit
+    /// <summary>
+    /// Load scene 1, wButton gets active, isUsable gets true, interactCount gets to 6.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Scene_Switch"))
@@ -78,6 +82,10 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// wButton gets false, isUsable true, interactCount 0.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Door_1"))
@@ -107,6 +115,10 @@ public class PlayerInteract : MonoBehaviour
     }
     #endregion
 
+    /// <summary>
+    /// tutorial buttons get active, waits for 2 seconds, tutorial buttons get false.
+    /// </summary>
+    /// <returns></returns>
     IEnumerator Wait()
     {
         tutorialButtons.SetActive(true);
@@ -117,7 +129,9 @@ public class PlayerInteract : MonoBehaviour
     }
 
     #region Own Mehtods
-
+    /// <summary>
+    /// Start Wait Coroutine.
+    /// </summary>
     public void Tutorial()
     {
         StartCoroutine("Wait");

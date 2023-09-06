@@ -171,7 +171,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: FMODEventPlayable
+    m_DisplayName: Footsteps
   m_Markers:
     m_Objects: []
   template:
@@ -239,15 +239,15 @@ MonoBehaviour:
       Slot13: 0
       Slot14: 0
       Slot15: 0
-  EventLength: 0
+  EventLength: Infinity
   eventName: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1370890194
+      Data2: 1211517943
+      Data3: -1995782224
+      Data4: 1418599060
+    Path: event:/SFX/Footsteps
   StopType: 0
   Parameters: []
 --- !u!74 &4059824975521808240

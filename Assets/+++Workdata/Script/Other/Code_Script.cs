@@ -28,11 +28,19 @@ public class Code_Script : MonoBehaviour
 
     private bool player;
 
+    private bool isActive;
+
+    /// <summary>
+    /// We make our playerControllerMap our new PlayerControllerMap
+    /// </summary>
     private void Awake()
     {
         playerControllerMap = new PlayerControllerMap();
     }
 
+    /// <summary>
+    /// We enable the playerControllerMap and perform the Door interact Method.
+    /// </summary>
     private void OnEnable()
     {
         playerControllerMap.Enable();
@@ -40,6 +48,9 @@ public class Code_Script : MonoBehaviour
         playerControllerMap.Player.Interact.performed += Interact;
     }
 
+    /// <summary>
+    /// We disable the playerControllerMap and 
+    /// </summary>
     private void OnDisable()
     {
         playerControllerMap.Disable();
@@ -47,6 +58,9 @@ public class Code_Script : MonoBehaviour
         playerControllerMap.Player.Interact.performed -= Interact;
     }
 
+    /// <summary>
+    /// makes player true if it is the object with Player tag.
+    /// </summary>
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -55,6 +69,9 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// makes player false if it is not an object with Player tag.
+    /// </summary>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -62,8 +79,14 @@ public class Code_Script : MonoBehaviour
             player = false;
         }
     }
+
+    /// <summary>
+    /// Puts the code1 to code 3 to 1 and changes the text 1 to 3 to 1 depending if ther are any in the code before.
+    /// </summary>
     public void Code_1()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
+
         if (code_1 == 0)
         {
             code_1 = 1;
@@ -84,8 +107,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 2 and changes the text 1 to 3 to 2 depending if ther are any in the code before.
+    /// </summary>
     public void Code_2()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 2;
@@ -103,8 +130,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 3 and changes the text 1 to 3 to 3 depending if ther are any in the code before.
+    /// </summary>
     public void Code_3()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 3;
@@ -122,8 +153,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 4 and changes the text 1 to text 3 to 4 depending if ther are any in the code before.
+    /// </summary>
     public void Code_4()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 4;
@@ -141,8 +176,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 5 and changes the text 1 to 3 to 5 depending if ther are any in the code before.
+    /// </summary>
     public void Code_5()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 5;
@@ -160,8 +199,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code 1 to code 3 to 6 and changes the text 1 to 3 to 6 depending if ther are any in the code before.
+    /// </summary>
     public void Code_6()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 6;
@@ -179,8 +222,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 7 and changes the text 1 to 3 to 7 depending if ther are any in the code before.
+    /// </summary>
     public void Code_7()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 7;
@@ -198,8 +245,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 8 and changes the text 1 to 3 to 8 depending if ther are any in the code before.
+    /// </summary>
     public void Code_8()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 8;
@@ -217,8 +268,12 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Puts the code1 to code 3 to 9 and changes the text 1 to 3 to 9 depending if ther are any in the code before.
+    /// </summary>
     public void Code_9()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.clickButton, transform.position);
         if (code_1 == 0)
         {
             code_1 = 9;
@@ -236,6 +291,9 @@ public class Code_Script : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// CHanges the code and text back to 0 if it was not the right code.
+    /// </summary>
     public void Update()
     {
         if (code_1 == 4 && code_2 == 1 && code_3 == 3)
@@ -302,17 +360,29 @@ public class Code_Script : MonoBehaviour
 
             number_3.text = "0";
         }
-
-       
     }
 
+    /// <summary>
+    /// Activates the code Panel and deactivates it.
+    /// </summary>
+    /// <param name="context"></param>
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.performed && player == true)
+        if (context.performed && player == true && isActive == false)
         {
             buttons.SetActive(true);
 
             playerMovement.moveSpeed = 0;
+
+            isActive = true;
+        }
+        else if(context.performed && player == true && isActive == true)
+        {
+            buttons.SetActive(false);
+
+            isActive = false;
+
+            playerMovement.moveSpeed = 7;
         }
     }
 }

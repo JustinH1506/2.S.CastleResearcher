@@ -68,6 +68,10 @@ public class Book : MonoBehaviour
         if (player == null) eButton.SetActive(false);
     }
 
+    /// <summary>
+    /// This gameObject gets deactivated, inventarBook gets active, Playing the getItemSound,itemManager gets activ.
+    /// </summary>
+    /// <param name="context"></param>
     public void Interacted(InputAction.CallbackContext context)
     {
         if (player == null) return;

@@ -9,6 +9,8 @@ public class FMODEvents : MonoBehaviour
 
     [field: SerializeField] public EventReference music { get; private set; }
 
+    [field: SerializeField] public EventReference startMusic { get; private set; }  
+
     [field: SerializeField] public EventReference lever { get; private set; }
 
     [field: SerializeField] public EventReference stoneDoor { get; private set; }
@@ -18,6 +20,8 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference winSound { get; private set; }
 
     [field: SerializeField] public EventReference getItemSound { get; private set; }
+
+    [field: SerializeField] public EventReference clickButton { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 

@@ -10,12 +10,18 @@ public class Inventar_Items : MonoBehaviour
     public bool isActive;
     public bool isUsed;
 
+    /// <summary>
+    /// gameObject gets true, isActive gets true.
+    /// </summary>
     public void CheckInventar()
     {
         gameObject.SetActive(true);
         isActive = true;
     }
 
+    /// <summary>
+    /// gameObject gets false, itemManager gets false
+    /// </summary>
     public void CheckStatues()
     {
         gameObject.SetActive(false);

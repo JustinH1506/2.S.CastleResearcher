@@ -15,15 +15,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "fbb12a79-6f44-4ee4-a797-abd1d865de38",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "15e0cc95-b2e9-442c-8ef4-4dc240a117a4",
@@ -36,15 +27,6 @@
                     "name": "Door_Interact",
                     "type": "Button",
                     "id": "e7739111-797b-44db-bbc3-b1ada25c432d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Tip",
-                    "type": "Button",
-                    "id": "3725a9d0-796f-4fff-a167-c08f3e2af067",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -120,28 +102,6 @@
                 },
                 {
                     "name": "",
-                    "id": "9f297ed3-c9e5-4105-ae83-670c7236a6d7",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b500f153-f33b-444b-8fbb-edbd9494921d",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "af08d363-5a19-44af-8eff-5dfa3d784c89",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -181,17 +141,6 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Door_Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "02b1d21c-4684-439b-a85e-48b9fb52674f",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Tip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
